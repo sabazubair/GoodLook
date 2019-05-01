@@ -9,7 +9,9 @@
 # add order key to help with sorting (this should be required validation: requires text and requires an order) -- create new migration addOrdertoQuestion
 
 #destory question
+QuestionChoice.destroy_all
 Question.destroy_all
+Style.destroy_all
 
 questions = Question.create([
   {text: "Who's your style icon?", order: 1},
@@ -29,13 +31,60 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15},
 ])
 
-Style.destroy_all
-
 styles = Style.create([
-  {name: "Bohemian"},
   {name: "Avant-garde"},
-  {name: "Urban"},
+  {name: "Bohemian"},
   {name: "Classic"},
-  {name: "Romantic"}
+  {name: "Romantic"},
+  {name: "Urban"}
 ])
+
+question_choice1 = QuestionChoice.create(
+  {
+    question_id: questions[0].id,
+    style_id: styles[0].id,
+    text: "a. Janelle Monae",
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
+
+question_choice2 = QuestionChoice.create(
+  {
+    question_id: questions[0].id,
+    style_id: styles[1].id,
+    text: "b. Zoe Kravitz",
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
+
+question_choice3 = QuestionChoice.create(
+  {
+    question_id: questions[0].id,
+    style_id: styles[2].id,
+    text: "c. Amal Clooney",
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
+
+question_choice4 = QuestionChoice.create(
+  {
+    question_id: questions[0].id,
+    style_id: styles[3].id,
+    text: "d. Mindy Kaling",
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
+
+question_choice5 = QuestionChoice.create(
+  {
+    question_id: questions[0].id,
+    style_id: styles[4].id,
+    text: "e. Awkwafina",
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
+
+
+
+# User.destroy_all
+
+# user1 = User.create(
+#   {email: "test@test.com",
+#     password: "test" })
+
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_01_003207) do
+ActiveRecord::Schema.define(version: 2019_05_01_162649) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_05_01_003207) do
     t.bigint "question_id"
     t.string "text"
     t.bigint "style_id"
-    t.binary "images"
+    t.string "image"
     t.index ["question_id"], name: "index_question_choices_on_question_id"
     t.index ["style_id"], name: "index_question_choices_on_style_id"
   end
