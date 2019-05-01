@@ -29,3 +29,13 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15},
 ])
 
+Style.destroy_all
+
+styles = Style.create([
+  {name: "Bohemian"},
+  {name: "Avant-garde"},
+  {name: "Urban"},
+  {name: "Classic"},
+  {name: "Romantic"}
+])
+
