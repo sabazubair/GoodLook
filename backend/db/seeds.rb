@@ -458,7 +458,7 @@ question_choice_11a = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[0].id,
     text: "a. Go to a Banksy art exhibit",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11b = QuestionChoice.create(
@@ -466,7 +466,7 @@ question_choice_11b = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[1].id,
     text: "b. Attend a night yoga event at High Park",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11c = QuestionChoice.create(
@@ -474,7 +474,7 @@ question_choice_11c = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[2].id,
     text: "c. Go to Canoe restaurant and have their braised beef",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11d = QuestionChoice.create(
@@ -482,7 +482,7 @@ question_choice_11d = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[3].id,
     text: "d. Watch a movie at a drive-in theatre",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11e = QuestionChoice.create(
@@ -490,7 +490,7 @@ question_choice_11e = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[4].id,
     text: "e. Play games at the Rec Room",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 # ----------- Question 12/15 -----------
