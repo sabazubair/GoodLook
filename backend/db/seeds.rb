@@ -129,7 +129,7 @@ question_choice_3a = QuestionChoice.create(
   {
     question_id: questions[2].id,
     style_id: styles[0].id,
-    text: "a. Grab a drink and join in on a discussion about Elon Musk's latest doings",
+    text: "a. Grab a drink and join in on a discussion about Elon Musk's latest doings.",
     image: nil
   })
 
@@ -145,7 +145,7 @@ question_choice_3c = QuestionChoice.create(
   {
     question_id: questions[2].id,
     style_id: styles[2].id,
-    text: "c. Say hello to everyone and ask how they are doing",
+    text: "c. Say hello to everyone and ask how they are doing.",
     image: nil
   })
 
@@ -153,7 +153,7 @@ question_choice_3d = QuestionChoice.create(
   {
     question_id: questions[2].id,
     style_id: styles[3].id,
-    text: "d. Find a group of people and share a personal, fun story. You are the life of the party",
+    text: "d. Find a group of people and share a personal, fun story. You are the life of the party.",
     image: nil
   })
 
@@ -161,7 +161,7 @@ question_choice_3e = QuestionChoice.create(
   {
     question_id: questions[2].id,
     style_id: styles[4].id,
-    text: "e. Grab a seat on the nearest bean bag chair and put on the Raptors game",
+    text: "e. Grab a seat on the nearest bean bag chair and put on the Raptors game.",
     image: nil
   })
 
@@ -170,7 +170,7 @@ question_choice_4a = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[0].id,
-    text: "a. I love cotton for its durability and comfort, but what matters most to me is that my clothing is unique to me",
+    text: "a. I love cotton for its durability and comfort, but what matters most to me is that my clothing is unique to me.",
     image: nil
   })
 
@@ -178,7 +178,7 @@ question_choice_4b = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[1].id,
-    text: "b. I own a variety of prints like animal prints, floral prints and cultural patterns",
+    text: "b. I own a variety of prints like animal prints, floral prints and cultural patterns.",
     image: nil
   })
 
@@ -186,7 +186,7 @@ question_choice_4c = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[2].id,
-    text: "c. When I buy clothing, I am looking for durability. Most of my clothing is made from cotton, linen, pure denim and leather",
+    text: "c. When I buy clothing, I am looking for durability. Most of my clothing is made from cotton, linen, pure denim and leather.",
     image: nil
   })
 
@@ -194,7 +194,7 @@ question_choice_4d = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[3].id,
-    text: "d. I have a few expensive pieces like silk, velvet, chiffon but I generally wear anything with florals and pastel colors",
+    text: "d. I have a few expensive pieces like silk, velvet, chiffon but I generally wear anything with florals and pastel colors.",
     image: nil
   })
 
@@ -202,7 +202,7 @@ question_choice_4e = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[4].id,
-    text: "e. It doesn’t matter. I buy whatever is in season and looks good",
+    text: "e. It doesn’t matter. I buy whatever is in season and looks good.",
     image: nil
   })
 
@@ -293,7 +293,7 @@ question_choice_7a = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[0].id,
-    text: "a. Mad et Len — Blackmusk",
+    text: "a. Mad et Len, Blackmusk",
     image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
   })
 
@@ -458,7 +458,7 @@ question_choice_11a = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[0].id,
     text: "a. Go to a Banksy art exhibit",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11b = QuestionChoice.create(
@@ -466,7 +466,7 @@ question_choice_11b = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[1].id,
     text: "b. Attend a night yoga event at High Park",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11c = QuestionChoice.create(
@@ -474,7 +474,7 @@ question_choice_11c = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[2].id,
     text: "c. Go to Canoe restaurant and have their braised beef",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11d = QuestionChoice.create(
@@ -482,7 +482,7 @@ question_choice_11d = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[3].id,
     text: "d. Watch a movie at a drive-in theatre",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 question_choice_11e = QuestionChoice.create(
@@ -490,7 +490,7 @@ question_choice_11e = QuestionChoice.create(
     question_id: questions[10].id,
     style_id: styles[4].id,
     text: "e. Play games at the Rec Room",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: nil
   })
 
 # ----------- Question 12/15 -----------
