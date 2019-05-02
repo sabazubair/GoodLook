@@ -20,8 +20,8 @@ import axios from "axios"
 // }
 
 export default class Quiz extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       questions:[]
     }
@@ -34,26 +34,43 @@ export default class Quiz extends Component {
        this.setState({questions:response.data})
     })
     .catch(error => console.log(error))
-  
+
   }
 
   render(){
     let question = this.state.questions.map((question)=>{
         let choices = question.choices.map((choice)=>{
-          return (
-          <div> 
-            <img width={100} height={100} src= {choice.image}/> 
+
+
+          if (choice.image && choice.text) {
+            return (
+            <div>
+              <img width={100} height={100} src= {choice.image}/>
+              <p>{choice.text}</p>
+            </div>
+            )
+          } else if (choice.image) {
+            return (
+            <div>
+            <img width={100} height={100} src= {choice.image}/>
+            </div>
+            )
+          } else {
+            return (
+            <div>
             <p>{choice.text}</p>
-          </div>)
+            </div>
+            )
+          }
         })
 
         return (
-        <div> 
+        <div>
           <p>{question.text}</p>
           <p>{choices}</p>
         </div>)
     })
-    
+
     return <div>{question}</div>
   }
 }
