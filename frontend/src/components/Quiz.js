@@ -1,5 +1,26 @@
 import React, {Component} from 'react'
 import axios from "axios"
+
+class Question extends Component{
+  constructor() {
+    super();
+  }
+
+  render(){
+   let {question, choices} = this.props
+
+    return  (<div>
+      <p>{question}</p>
+
+    </div>
+     )
+
+  }
+
+}
+
+
+
 export default class Quiz extends Component {
   constructor() {
     super();
@@ -19,6 +40,13 @@ export default class Quiz extends Component {
   }
 
   render(){
-    return (<h1>Quiz page</h1>)
+    let question = this.state.questions.map((question)=>{
+      const {choices,text} = question
+      
+        return (<Question  question={text} /> )
+     
+    })
+    
+    return <div>{question}</div>
   }
 }
