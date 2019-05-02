@@ -11,6 +11,7 @@ QuestionChoice.destroy_all
 Question.destroy_all
 Style.destroy_all
 User.destroy_all
+Result.destroy_all
 Outfit.destroy_all
 
 #Create the 15 quiz questions with order and text
@@ -663,6 +664,25 @@ user1 = User.create(
     email: "test@test.com",
     password: "test"
   })
+
+user2 = User.create(
+  {
+    email: "example@example.com",
+    password: "example"
+  })
+
+# RESULTS SEED -------------------
+result1 = Result.create(
+  {
+    style_id: styles[0].id,
+    user_id: user1.id
+  })
+
+result2 = Result.create(
+  {
+    style_id: styles[1].id,
+    user_id: user2.id
+  })
 # OUTFIT SEED ------------------
 outfit1 = Outfit.create(
   {
@@ -670,4 +690,10 @@ outfit1 = Outfit.create(
     image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
   }
 )
+
+outfit2 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
 
