@@ -9,10 +9,10 @@
 #Remove existing data in Goodlook database
 QuestionChoice.destroy_all
 Question.destroy_all
-Style.destroy_all
 User.destroy_all
 Result.destroy_all
 Outfit.destroy_all
+Style.destroy_all
 
 #Create the 15 quiz questions with order and text
 questions = Question.create([
