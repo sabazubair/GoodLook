@@ -9,7 +9,7 @@ export default class Quiz extends Component {
   }
 
   componentDidMount() {
-    axios("/api/v1/quizzes/new")
+    axios("/api/v1/quiz")
     .then(response => {
       console.log(response.data)
        this.setState({questions:response.data})
