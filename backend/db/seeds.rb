@@ -11,6 +11,7 @@ QuestionChoice.destroy_all
 Question.destroy_all
 Style.destroy_all
 User.destroy_all
+Outfit.destroy_all
 
 #Create the 15 quiz questions with order and text
 questions = Question.create([
@@ -656,11 +657,17 @@ question_choice_15e = QuestionChoice.create(
     text: "e. Sunflower by Post Malone",
     image: nil
   })
-
+# USER SEED ------------------
 user1 = User.create(
   {
     email: "test@test.com",
     password: "test"
   })
-
+# OUTFIT SEED ------------------
+outfit1 = Outfit.create(
+  {
+    style_id: styles[0].id,
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  }
+)
 
