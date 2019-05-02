@@ -45,8 +45,8 @@ export default class Quiz extends Component {
           if (choice.image && choice.text) {
             return (
             <div>
-              <img width={100} height={100} src= {choice.image}/>
               <p>{choice.text}</p>
+              <img width={100} height={100} src= {choice.image}/>
             </div>
             )
           } else if (choice.image) {
