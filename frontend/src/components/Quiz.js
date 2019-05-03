@@ -62,14 +62,20 @@ export default class Quiz extends Component {
   }
 
   sendStyleId = (id) => {
+    let body = {
+      user_id: 2,
+      style_id: id
+    }
 
-    axios.post('/results', {
-      styleId :  id
-    })
+    axios.post('/api/v1/results',
+      body)
+
     .then((response)=>{
-      console.log("Style Id has been sent to server")
+      console.log(response);
+      console.log("Style Id has been sent to server");
     })
 }
+
   render(){
         return (
           <div >
