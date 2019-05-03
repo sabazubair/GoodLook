@@ -23,7 +23,7 @@ export default class Quiz extends Component {
     .catch(error => console.log(error))
   
   }
-
+  
   nextQuestion = (choice) => {
     if (this.state.activeQuestion < this.state.questions.length - 1) {
       console.log(choice)
@@ -72,7 +72,6 @@ export default class Quiz extends Component {
     })
   
 }
-
   render(){
         return (
           <div >
@@ -93,5 +92,3 @@ export default class Quiz extends Component {
     
   }
 }
-
-
