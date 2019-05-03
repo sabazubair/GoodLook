@@ -33,7 +33,7 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15}
 ])
 
-#Create the 5 styles for the quiz//Descript: You are [Style]//Image: celebrity
+#Create the 5 styles for the quiz
 styles = Style.create([
   {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
   {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
@@ -50,7 +50,7 @@ question_choice_1a = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[0].id,
     text: "a. Janelle Monae",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_janellemonae.jpg"
   })
 
 question_choice_1b = QuestionChoice.create(
@@ -58,7 +58,7 @@ question_choice_1b = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[1].id,
     text: "b. Zoe Kravitz",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_zk4.jpg"
   })
 
 question_choice_1c = QuestionChoice.create(
@@ -66,7 +66,7 @@ question_choice_1c = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[2].id,
     text: "c. Amal Clooney",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_amclooney.jpg"
   })
 
 question_choice_1d = QuestionChoice.create(
@@ -74,15 +74,15 @@ question_choice_1d = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[3].id,
     text: "d. Mindy Kaling",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_mindykaling.jpg"
   })
 
 question_choice_1e = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[4].id,
-    text: "e. Awkwafina",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    text: "e. Vanessa Hudgens",
+    image: "/assets/question_1/boho_vh.jpg"
   })
 
 # ----------- Question 2/15 -----------
@@ -91,7 +91,7 @@ question_choice_2a = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[0].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/avantgarde_room.jpg"
   })
 
 question_choice_2b = QuestionChoice.create(
@@ -99,7 +99,7 @@ question_choice_2b = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[1].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/boho_room2.jpg"
   })
 
 question_choice_2c = QuestionChoice.create(
@@ -107,7 +107,7 @@ question_choice_2c = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[2].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/classic_room.jpg"
   })
 
 question_choice_2d = QuestionChoice.create(
@@ -115,7 +115,7 @@ question_choice_2d = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[3].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/romantic_room1.jpg"
   })
 
 question_choice_2e = QuestionChoice.create(
@@ -123,7 +123,7 @@ question_choice_2e = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[4].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/urban_room2.jpg"
   })
 
 # ----------- Question 3/15 -----------
@@ -188,7 +188,7 @@ question_choice_4c = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[2].id,
-    text: "c. When I buy clothing, I am looking for durability. Most of my clothing is made from cotton, linen, pure denim and leather.",
+    text: "c. When I buy clothing, I am looking for quality. Most of my clothing is made from cotton, linen, pure denim and leather.",
     image: nil
   })
 
@@ -214,7 +214,7 @@ question_choice_5a = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[0].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_5/politicalart_ag.jpg"
   })
 
 question_choice_5b = QuestionChoice.create(
@@ -222,7 +222,7 @@ question_choice_5b = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[1].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_5/elephantart_boho.jpg"
   })
 
 question_choice_5c = QuestionChoice.create(
@@ -230,7 +230,7 @@ question_choice_5c = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[2].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_5/classicartwork.jpg"
   })
 
 question_choice_5d = QuestionChoice.create(
@@ -238,7 +238,7 @@ question_choice_5d = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[3].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_5/rom_artwork.jpg"
   })
 
 question_choice_5e = QuestionChoice.create(
@@ -246,7 +246,7 @@ question_choice_5e = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[4].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_5/urb_artwork.jpg"
   })
 
 # ----------- Question 6/15 -----------
@@ -254,8 +254,8 @@ question_choice_6a = QuestionChoice.create(
   {
     question_id: questions[5].id,
     style_id: styles[0].id,
-    text: "a. Tokyo, Japan",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    text: "a. Oslo, Norway",
+    image: "/assets/question_6/ag_oslonorway.jpg"
   })
 
 question_choice_6b = QuestionChoice.create(
@@ -263,15 +263,15 @@ question_choice_6b = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[1].id,
     text: "b. Oaxaca, Mexico",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_6/boho_mexico.jpg"
   })
 
 question_choice_6c = QuestionChoice.create(
   {
     question_id: questions[5].id,
     style_id: styles[2].id,
-    text: "c. Oslo, Norway",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    text: "c. London, England",
+    image: "/assets/question_6/class_londoneng.jpg"
   })
 
 question_choice_6d = QuestionChoice.create(
@@ -279,7 +279,7 @@ question_choice_6d = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[3].id,
     text: "d. Paris, France",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_6/rom_parisfrance.jpg"
   })
 
 question_choice_6e = QuestionChoice.create(
@@ -287,7 +287,7 @@ question_choice_6e = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[4].id,
     text: "e. New York, USA",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_6/urb_newyork.jpg"
   })
 
 # ----------- Question 7/15 -----------
@@ -296,7 +296,7 @@ question_choice_7a = QuestionChoice.create(
     question_id: questions[6].id,
     style_id: styles[0].id,
     text: "a. Mad et Len, Blackmusk",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_7/ag_fragrance.jpg"
   })
 
 question_choice_7b = QuestionChoice.create(
@@ -304,7 +304,7 @@ question_choice_7b = QuestionChoice.create(
     question_id: questions[6].id,
     style_id: styles[1].id,
     text: "b. Saje, Goddess Natural Perfume",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_7/boho_naturalperfume.jpg"
   })
 
 question_choice_7c = QuestionChoice.create(
@@ -312,7 +312,7 @@ question_choice_7c = QuestionChoice.create(
     question_id: questions[6].id,
     style_id: styles[2].id,
     text: "c. Yves Saint Laurent, Black Opium",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_7/class_blackopium.jpg"
   })
 
 question_choice_7d = QuestionChoice.create(
@@ -320,7 +320,7 @@ question_choice_7d = QuestionChoice.create(
     question_id: questions[6].id,
     style_id: styles[3].id,
     text: "d. Marc Jacobs, Daisy",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_7/rom_marcjacobs.jpg"
   })
 
 question_choice_7e = QuestionChoice.create(
@@ -328,7 +328,7 @@ question_choice_7e = QuestionChoice.create(
     question_id: questions[6].id,
     style_id: styles[4].id,
     text: "e. Clean, Sephora",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_7/urb_clean.jpg"
   })
 
 # ----------- Question 8/15 -----------
@@ -336,7 +336,7 @@ question_choice_8a = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[0].id,
-    text: "a. Risk-taker, eccentric, creative",
+    text: "a. Risk-taker, lives life to the edge",
     image: nil
   })
 
@@ -344,7 +344,7 @@ question_choice_8b = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[1].id,
-    text: "b. Free-spirited, grounded, friendly",
+    text: "b. Free-spirited",
     image: nil
   })
 
@@ -352,7 +352,7 @@ question_choice_8c = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[2].id,
-    text: "c. Sophisticated, gracious and strategic",
+    text: "c. Well-groomed, sophisticated",
     image: nil
   })
 
@@ -368,7 +368,7 @@ question_choice_8e = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[4].id,
-    text: "e. Trend-setter, laidback, practical",
+    text: "e. Trend-setter, being at the centre of all the action",
     image: nil
   })
 
