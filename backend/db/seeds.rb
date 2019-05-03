@@ -661,12 +661,14 @@ question_choice_15e = QuestionChoice.create(
 # USER SEED ------------------
 user1 = User.create(
   {
+    id: 1,
     email: "test@test.com",
     password: "test"
   })
 
 user2 = User.create(
   {
+    id: 2,
     email: "example@example.com",
     password: "example"
   })
