@@ -680,11 +680,6 @@ result1 = Result.create(
     user_id: user1.id
   })
 
-result2 = Result.create(
-  {
-    style_id: styles[1].id,
-    user_id: user2.id
-  })
 # OUTFIT SEED ------------------
 outfit1 = Outfit.create(
   {
