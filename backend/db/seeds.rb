@@ -33,7 +33,7 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15}
 ])
 
-#Create the 5 styles for the quiz//Descript: You are [Style]//Image: celebrity
+#Create the 5 styles for the quiz
 styles = Style.create([
   {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
   {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
@@ -50,7 +50,7 @@ question_choice_1a = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[0].id,
     text: "a. Janelle Monae",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_janellemonae.jpg"
   })
 
 question_choice_1b = QuestionChoice.create(
@@ -58,7 +58,7 @@ question_choice_1b = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[1].id,
     text: "b. Zoe Kravitz",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_zk4.jpg"
   })
 
 question_choice_1c = QuestionChoice.create(
@@ -66,7 +66,7 @@ question_choice_1c = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[2].id,
     text: "c. Amal Clooney",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_amclooney.jpg"
   })
 
 question_choice_1d = QuestionChoice.create(
@@ -74,15 +74,15 @@ question_choice_1d = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[3].id,
     text: "d. Mindy Kaling",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_1/q1_mindykaling.jpg"
   })
 
 question_choice_1e = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[4].id,
-    text: "e. Awkwafina",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    text: "e. Vanessa Hudgens",
+    image: "/assets/question_1/boho_vh.jpg"
   })
 
 # ----------- Question 2/15 -----------
@@ -91,7 +91,7 @@ question_choice_2a = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[0].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/avantgarde_room.jpg"
   })
 
 question_choice_2b = QuestionChoice.create(
@@ -99,7 +99,7 @@ question_choice_2b = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[1].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/boho_room2.jpg"
   })
 
 question_choice_2c = QuestionChoice.create(
@@ -107,7 +107,7 @@ question_choice_2c = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[2].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/classic_room.jpg"
   })
 
 question_choice_2d = QuestionChoice.create(
@@ -115,7 +115,7 @@ question_choice_2d = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[3].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/romantic_room1.jpg"
   })
 
 question_choice_2e = QuestionChoice.create(
@@ -123,7 +123,7 @@ question_choice_2e = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[4].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_2/urban_room2.jpg"
   })
 
 # ----------- Question 3/15 -----------
