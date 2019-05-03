@@ -681,16 +681,22 @@ result1 = Result.create(
   })
 
 # OUTFIT SEED ------------------
+# AVANT-GARDE, style_id 0
+
 outfit1 = Outfit.create(
   {
     style_id: styles[0].id,
-    image: "/assets/question_2/boho_room2.jpg"
-  }
-)
+    image: "/assets/ag_outfits/ag_abstractiontop.jpg",
+    text: "Abstraction Top",
+    link: "https://theunconventional.co.uk/dzhus-abstraction-top.html"
+  })
 
 outfit2 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/question_2/boho_room2.jpg"
+    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
+    text: "Black Maxi Top",
+    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
+
 
