@@ -34,31 +34,42 @@ export default class Quiz extends Component {
        this.setState({questions:response.data})
     })
     .catch(error => console.log(error))
+  }
 
+  onSubmit = (event) => {
+    axios.post('/api/v1/results', {
+      id: 3,
+      style_id: 2
+    })
+    .then(function (response) {
+      console.log(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
 
   render(){
     let question = this.state.questions.map((question)=>{
+
         let choices = question.choices.map((choice)=>{
-
-
           if (choice.image && choice.text) {
             return (
-            <div>
-              <p>{choice.text}</p>
-              <img width={100} height={100} src= {choice.image}/>
-            </div>
+              <div>
+                <p>{choice.text}</p>
+                <img width={100} height={100} src= {choice.image}/>
+              </div>
             )
           } else if (choice.image) {
             return (
             <div>
-            <img width={100} height={100} src= {choice.image}/>
+              <img width={100} height={100} src= {choice.image}/>
             </div>
             )
           } else {
             return (
             <div>
-            <p>{choice.text}</p>
+              <p>{choice.text}</p>
             </div>
             )
           }
@@ -67,10 +78,13 @@ export default class Quiz extends Component {
         return (
         <div>
           <p>{question.text}</p>
-          <p>{choices}</p>
+          {choices}
         </div>)
     })
 
-    return <div>{question}</div>
+    return (<div>
+    {question}
+    <button onClick={this.onSubmit}>Click me!</button>
+    </div>)
   }
 }
