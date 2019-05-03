@@ -1,7 +1,8 @@
 class Api::V1::OutfitsController < ApplicationController
   def show
-    @result = Result.find_by user_id: 1
-    @outfit = Outfit.all.find_by style_id: @result.style_id
+    @results = Result.all.where(user_id: 2).sort_by {|result| result.id}.reverse!
+    @latest_result = @results[0]
+    @outfit = Outfit.all.where style_id: @latest_result.style_id
 
     render json: @outfit
   end
