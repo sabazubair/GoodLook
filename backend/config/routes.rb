@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'quiz', to: 'quizzes#new'
       resources :quizzes
+
+      get 'result', to: 'results#show'
+      resources :results
     end
   end
 end

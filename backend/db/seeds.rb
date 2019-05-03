@@ -9,8 +9,10 @@
 #Remove existing data in Goodlook database
 QuestionChoice.destroy_all
 Question.destroy_all
-Style.destroy_all
 User.destroy_all
+Result.destroy_all
+Outfit.destroy_all
+Style.destroy_all
 
 #Create the 15 quiz questions with order and text
 questions = Question.create([
@@ -31,13 +33,13 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15}
 ])
 
-#Create the 5 styles for the quiz
+#Create the 5 styles for the quiz//Descript: You are [Style]//Image: celebrity
 styles = Style.create([
-  {name: "Avant-garde", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg" },
-  {name: "Bohemian", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Classic", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Romantic", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Urban", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"}
+  {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
+  {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
+  {name: "Classic", description: "Your style persona is Classic.", image: "/assets/results/amal_result.jpg"},
+  {name: "Romantic", description: "Your style persona is Romantic.", image: "assets/results/mindyresult1.jpg"},
+  {name: "Urban", description: "Your style persona is Urban.", image: "assets/results/zoe_result1.jpg"}
 ])
 
 #Create the question choices for each question where each question choice is associated with one question and one style
@@ -656,11 +658,44 @@ question_choice_15e = QuestionChoice.create(
     text: "e. Sunflower by Post Malone",
     image: nil
   })
-
+# USER SEED ------------------
 user1 = User.create(
   {
+    id: 1,
     email: "test@test.com",
     password: "test"
   })
 
+user2 = User.create(
+  {
+    id: 2,
+    email: "example@example.com",
+    password: "example"
+  })
+
+# RESULTS SEED -------------------
+result1 = Result.create(
+  {
+    style_id: styles[0].id,
+    user_id: user1.id
+  })
+
+result2 = Result.create(
+  {
+    style_id: styles[1].id,
+    user_id: user2.id
+  })
+# OUTFIT SEED ------------------
+outfit1 = Outfit.create(
+  {
+    style_id: styles[0].id,
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  }
+)
+
+outfit2 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+  })
 
