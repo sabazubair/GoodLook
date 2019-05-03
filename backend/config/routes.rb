@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
       get 'result', to: 'results#show'
       resources :results
+
+      get 'recommendations', to: 'outfits#show'
+      resources :outfits
     end
   end
 end
