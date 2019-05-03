@@ -9,7 +9,6 @@ export default class Index extends Component {
       <NavBar/>
     <h1>Home Page</h1>
     <Link to= "/quiz" >Take the Quiz</Link>
-    <Link to= "/login" >Sign In</Link>
     <Link to= "/result" >Result</Link>
     </div>
     )
