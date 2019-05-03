@@ -33,13 +33,13 @@ questions = Question.create([
   {text: "What would be the anthem to your life?", order: 15}
 ])
 
-#Create the 5 styles for the quiz
+#Create the 5 styles for the quiz//Descript: You are [Style]//Image: celebrity
 styles = Style.create([
-  {name: "Avant-garde", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg" },
-  {name: "Bohemian", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Classic", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Romantic", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"},
-  {name: "Urban", description: "Hello", image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"}
+  {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "http://bit.ly/2WjWF0F"},
+  {name: "Bohemian", description: "Your style persona is Bohemian.", image: "http://bit.ly/2WjXcQd"},
+  {name: "Classic", description: "Your style persona is Classic.", image: "http://bit.ly/2GSIMQD"},
+  {name: "Romantic", description: "Your style persona is Romantic.", image: "http://bit.ly/2IWbEL9"},
+  {name: "Urban", description: "Your style persona is Urban.", image: "http://bit.ly/2V8DOt3"}
 ])
 
 #Create the question choices for each question where each question choice is associated with one question and one style
