@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
       get 'recommendations', to: 'outfits#show'
       resources :outfits
+
+      resources :users do
+        resources :outfits
+      end
     end
   end
 end

@@ -7,12 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #Remove existing data in Goodlook database
+UserOutfit.destroy_all
 QuestionChoice.destroy_all
-Question.destroy_all
 User.destroy_all
 Result.destroy_all
 Outfit.destroy_all
 Style.destroy_all
+Question.destroy_all
 
 #Create the 15 quiz questions with order and text
 questions = Question.create([
@@ -699,4 +700,14 @@ outfit2 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
+user_outfit1 = UserOutfit.create(
+  {
+    user_id: 2,
+    outfit_id: outfit1.id
+  })
 
+user_outfit2 = UserOutfit.create(
+  {
+    user_id: 1,
+    outfit_id: outfit2.id
+  })

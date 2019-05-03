@@ -4,8 +4,9 @@ module Api::V1
   class ResultsController < ApplicationController
 
     def show
-      @result = Result.find_by user_id: 1
-      @style = Style.find_by id: @result.style_id
+      @results = Result.all.where(user_id: 2).sort_by {|result| result.id}.reverse!
+      @latest_result = @results[0]
+      @style = Style.find_by id: @latest_result.style_id
 
       render json: @style
     end

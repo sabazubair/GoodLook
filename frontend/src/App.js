@@ -8,10 +8,13 @@ import Login from "./components/Login";
 import About from "./components/About";
 import MeettheTeam from "./components/Meettheteam";
 import Signup from "./components/Signup";
+import NavBar from "./components/NavBar";
+import AfterQuiz from "./components/AfterQuiz/AfterQuiz";
 export default class AppRouter extends Component {
 render (){
 return (
     <Router>
+      <NavBar />
       <Route path="/" exact component={Index} />
       <Route path="/quiz" component={Quiz} />
       <Route path="/login" component={Login} />
@@ -19,7 +22,7 @@ return (
       <Route path="/meettheteam" component={MeettheTeam}/>
       <Route path="/signup" component={Signup}/>
       <Route path="/result" component={Result}/>
-
+      <Route path="/afterquiz" component={AfterQuiz}/>
     </Router>
   );
 }
