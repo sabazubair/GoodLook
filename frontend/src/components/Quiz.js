@@ -21,9 +21,8 @@ export default class Quiz extends Component {
        this.setState({questions:response.data})
     })
     .catch(error => console.log(error))
-  
   }
-  
+
   nextQuestion = (choice) => {
     if (this.state.activeQuestion < this.state.questions.length - 1) {
       console.log(choice)
@@ -63,15 +62,20 @@ export default class Quiz extends Component {
   }
 
   sendStyleId = (id) => {
+    let body = {
+      user_id: 2,
+      style_id: id
+    }
 
-    axios.post('/results', {
-      styleId :  id
-    })
+    axios.post('/api/v1/results',
+      body)
+
     .then((response)=>{
-      console.log("Style Id has been sent to server")
+      console.log(response);
+      console.log("Style Id has been sent to server");
     })
-  
 }
+
   render(){
         return (
           <div >
@@ -79,16 +83,16 @@ export default class Quiz extends Component {
           {this.state.questions.map((item, idx) => {
             const display = this.state.activeQuestion === idx;
             return <Question
-            question={item} 
-            key={idx} 
-            display={display} 
-            nextQuestion={this.nextQuestion} 
+            question={item}
+            key={idx}
+            display={display}
+            nextQuestion={this.nextQuestion}
              />
           })}
         </Card>
           </div>
-       
+
     )
-    
+
   }
 }

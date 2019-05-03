@@ -1,3 +1,5 @@
+require 'json'
+
 module Api::V1
   class ResultsController < ApplicationController
 
@@ -9,6 +11,17 @@ module Api::V1
     end
 
     def create
+      @result = Result.new(result_params)
+
+      if @result.save!
+        render json: @result
+      end
     end
+
+    private
+    def result_params
+      params.require(:result).permit(:user_id, :style_id)
+    end
+
   end
 end
