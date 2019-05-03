@@ -23,12 +23,13 @@ export default class Result extends Component {
     let resultName = this.state.result.name;
     let resultDescription = this.state.result.description;
     let resultImage = this.state.result.image;
+    console.log(resultImage)
 
     return (
     <div>
       <h2>Your style is: {resultName}</h2>
       <p>{resultDescription}</p>
-      <img width={100} height={100} src={resultImage}/>
+      <img width={500} height={500} src={resultImage}/>
     </div>
     )
   }
