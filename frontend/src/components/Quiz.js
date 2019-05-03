@@ -1,29 +1,16 @@
 import React, {Component} from 'react'
 import axios from "axios"
+import Question from './Question.js'
+import Card from 'react-bootstrap/Card'
 
-// class Question extends Component{
-//   constructor() {
-//     super();
-//   }
-
-//   render(){
-//    let {question, choices} = this.props
-
-//     return  (<div>
-//       <p>{question}</p>
-
-//     </div>
-//      )
-
-//   }
-
-// }
 
 export default class Quiz extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      questions:[]
+      questions:[],
+      activeQuestion:0,
+      resultLog:[]
     }
   }
 
@@ -36,55 +23,70 @@ export default class Quiz extends Component {
     .catch(error => console.log(error))
   }
 
-  onSubmit = (event) => {
-    axios.post('/api/v1/results', {
-      id: 3,
-      style_id: 2
+  nextQuestion = (choice) => {
+    if (this.state.activeQuestion < this.state.questions.length - 1) {
+      console.log(choice)
+      let styleId = choice.style_id
+      let resultLog = this.state.resultLog
+      resultLog.push(styleId)
+      this.setState({
+        activeQuestion: this.state.activeQuestion + 1,
+        resultLog
+      })
+    } else {
+      console.log('calculating style preference..')
+     const mostFrequentStyle = this.mostFrequent(this.state.resultLog)
+     this.sendStyleId(mostFrequentStyle)
+      console.log('This is the most frequest style Id..')
+      console.log(this.mostFrequent(this.state.resultLog))
+    }
+  }
+  mostFrequent = (resultLog) => {
+    let count = {}
+    resultLog.forEach(function (result) {
+      if (count[result]) {
+        count[result] += 1
+      } else {
+        count[result] = 1
+      }
     })
-    .then(function (response) {
-      console.log(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    let mostResult
+    let highest = 0
+    for (let result in count) {
+      if (count[result] > highest) {
+        mostResult = result
+        highest = count[result]
+      }
+    }
+    return mostResult
   }
 
-  render(){
-    let question = this.state.questions.map((question)=>{
+  sendStyleId = (id) => {
 
-        let choices = question.choices.map((choice)=>{
-          if (choice.image && choice.text) {
-            return (
-              <div>
-                <p>{choice.text}</p>
-                <img width={100} height={100} src= {choice.image}/>
-              </div>
-            )
-          } else if (choice.image) {
-            return (
-            <div>
-              <img width={100} height={100} src= {choice.image}/>
-            </div>
-            )
-          } else {
-            return (
-            <div>
-              <p>{choice.text}</p>
-            </div>
-            )
-          }
-        })
-
-        return (
-        <div>
-          <p>{question.text}</p>
-          {choices}
-        </div>)
+    axios.post('/results', {
+      styleId :  id
     })
+    .then((response)=>{
+      console.log("Style Id has been sent to server")
+    })
+}
+  render(){
+        return (
+          <div >
+   <Card style={{ width:'25rem', margin:'5em auto' }}>
+          {this.state.questions.map((item, idx) => {
+            const display = this.state.activeQuestion === idx;
+            return <Question
+            question={item}
+            key={idx}
+            display={display}
+            nextQuestion={this.nextQuestion}
+             />
+          })}
+        </Card>
+          </div>
 
-    return (<div>
-    {question}
-    <button onClick={this.onSubmit}>Click me!</button>
-    </div>)
+    )
+
   }
 }
