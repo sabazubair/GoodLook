@@ -36,10 +36,10 @@ questions = Question.create([
 #Create the 5 styles for the quiz//Descript: You are [Style]//Image: celebrity
 styles = Style.create([
   {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
-  {name: "Bohemian", description: "Your style persona is Bohemian.", image: "http://bit.ly/2WjXcQd"},
-  {name: "Classic", description: "Your style persona is Classic.", image: "http://bit.ly/2GSIMQD"},
-  {name: "Romantic", description: "Your style persona is Romantic.", image: "http://bit.ly/2IWbEL9"},
-  {name: "Urban", description: "Your style persona is Urban.", image: "http://bit.ly/2V8DOt3"}
+  {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
+  {name: "Classic", description: "Your style persona is Classic.", image: "/assets/results/amal_result.jpg"},
+  {name: "Romantic", description: "Your style persona is Romantic.", image: "assets/results/mindyresult1.jpg"},
+  {name: "Urban", description: "Your style persona is Urban.", image: "assets/results/zoe_result1.jpg"}
 ])
 
 #Create the question choices for each question where each question choice is associated with one question and one style
