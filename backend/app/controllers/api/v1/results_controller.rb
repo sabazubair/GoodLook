@@ -1,16 +1,14 @@
-class Api::V1::ResultsController < ApplicationController
+module Api::V1
+  class ResultsController < ApplicationController
 
-  def show
-    @quiz = Question.all.sort_by {|question| question.order }.map do |question|
-      { id: question.id,
-        text: question.text,
-        choices: question.question_choices
-      }
+    def show
+      @result = Result.find_by user_id: 1
+      @style = Style.find_by id: @result.style_id
+
+      render json: @style
     end
 
-    render json: @quiz
-  end
-
-  def create
+    def create
+    end
   end
 end
