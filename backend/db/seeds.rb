@@ -58,8 +58,8 @@ question_choice_1b = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[1].id,
-    text: "b. Zoe Kravitz",
-    image: "/assets/question_1/q1_zk4.jpg"
+    text: "b. Vanessa Hudgens",
+    image: "/assets/question_1/boho_vh.jpg"
   })
 
 question_choice_1c = QuestionChoice.create(
@@ -82,8 +82,8 @@ question_choice_1e = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[4].id,
-    text: "e. Vanessa Hudgens",
-    image: "/assets/question_1/boho_vh.jpg"
+    text: "e. Zoe Kravitz",
+    image: "/assets/question_1/q1_zk4.jpg"
   })
 
 # ----------- Question 2/15 -----------
@@ -567,7 +567,7 @@ question_choice_13d = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[3].id,
     text: nil,
-    image: "/assets/question_13/katespadescarf.jpeg"
+    image: "/assets/question_13/katespadescarf.jpg"
   })
 
 question_choice_13e = QuestionChoice.create(
@@ -684,7 +684,7 @@ result1 = Result.create(
 # OUTFIT SEED ------------------
 # AVANT-GARDE, STYLE_ID = 0
 
-outfit1 = Outfit.create(
+outfit_ag_1= Outfit.create(
   {
     style_id: styles[0].id,
     image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
@@ -692,17 +692,10 @@ outfit1 = Outfit.create(
     link: "https://theunconventional.co.uk/dzhus-abstraction-top.html"
   })
 
-outfit2 = Outfit.create(
-  {
-    style_id: styles[0].id,
-    image: "",
-    text: "",
-    link: ""
-  })
 
 #BOHO, STYLE_ID = 1
 
-outfit2 = Outfit.create(
+outfit_boho_1 = Outfit.create(
   {
     style_id: styles[1].id,
     image: "/assets/ag_outfits/ag_abstractiontop.jpg",
@@ -710,7 +703,7 @@ outfit2 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
-outfit3 = Outfit.create(
+outfit_boho_2 = Outfit.create(
   {
     style_id: styles[1].id,
     image: "/assets/question_1/boho_vh.jpg",
@@ -718,7 +711,7 @@ outfit3 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
-outfit4 = Outfit.create(
+outfit_boho_3 = Outfit.create(
   {
     style_id: styles[1].id,
     image: "/assets/question_1/q1_zk4.jpg",
@@ -726,6 +719,7 @@ outfit4 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
+#USER OUTFITS
 user_outfit2 = UserOutfit.create(
   {
     user_id: 1,
