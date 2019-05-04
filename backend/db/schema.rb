@@ -61,7 +61,6 @@ ActiveRecord::Schema.define(version: 2019_05_03_213717) do
     t.string "password_digest"
   end
 
-  add_foreign_key "outfits", "styles"
   add_foreign_key "question_choices", "questions"
   add_foreign_key "question_choices", "styles"
 end
