@@ -687,7 +687,7 @@ result1 = Result.create(
 outfit1 = Outfit.create(
   {
     style_id: styles[0].id,
-    image: "/assets/ag_outfits/ag_abstractiontop.jpg",
+    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
     text: "Abstraction Top",
     link: "https://theunconventional.co.uk/dzhus-abstraction-top.html"
   })
@@ -695,7 +695,7 @@ outfit1 = Outfit.create(
 outfit2 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
+    image: "/assets/ag_outfits/ag_abstractiontop.jpg",
     text: "Black Maxi Top",
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
@@ -703,25 +703,21 @@ outfit2 = Outfit.create(
 outfit3 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
+    image: "/assets/question_1/boho_vh.jpg",
     text: "Hello Tshirt",
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
-user_outfit1 = UserOutfit.create(
+outfit4 = Outfit.create(
   {
-    user_id: 2,
-    outfit_id: outfit1.id
+    style_id: styles[1].id,
+    image: "/assets/question_1/q1_zk4.jpg",
+    text: "Hello Tshirt",
+    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
 user_outfit2 = UserOutfit.create(
   {
     user_id: 1,
     outfit_id: outfit2.id
-  })
-
-user_outfit3 = UserOutfit.create(
-  {
-    user_id: 2,
-    outfit_id: outfit3.id
   })

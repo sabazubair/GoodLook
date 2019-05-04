@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       get 'quiz', to: 'quizzes#new'
       resources :quizzes
 
+      get 'user', to: 'users#create'
+
       get 'result', to: 'results#show'
       resources :results
 
@@ -12,9 +14,7 @@ Rails.application.routes.draw do
       resources :outfits
 
       get 'wardrobe', to: 'user_outfits#show'
-      resources :users do
-        resources :user_outfits
-      end
+      resources :user_outfits
     end
   end
 end

@@ -8,6 +8,7 @@ export default class Quiz extends Component {
   constructor() {
     super();
     this.state = {
+      user: null,
       questions:[],
       activeQuestion:0,
       resultLog:[]
@@ -19,6 +20,13 @@ export default class Quiz extends Component {
     .then(response => {
       console.log(response.data)
        this.setState({questions:response.data})
+    })
+    .catch(error => console.log(error));
+
+    axios("/api/v1/user")
+    .then(response => {
+      console.log(response.data)
+       this.setState({user:response.data})
     })
     .catch(error => console.log(error))
   }
@@ -63,9 +71,9 @@ export default class Quiz extends Component {
 
   sendStyleId = (id) => {
     let body = {
-      user_id: 2,
+      user_id: this.state.user.id,
       style_id: id
-    }
+    };
 
     axios.post('/api/v1/results',
       body)
@@ -83,6 +91,7 @@ export default class Quiz extends Component {
           {this.state.questions.map((item, idx) => {
             const display = this.state.activeQuestion === idx;
             return <Question
+            userId={this.state.user}
             question={item}
             key={idx}
             display={display}
