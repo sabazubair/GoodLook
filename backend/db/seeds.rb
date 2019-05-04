@@ -723,5 +723,5 @@ outfit_boho_3 = Outfit.create(
 user_outfit2 = UserOutfit.create(
   {
     user_id: 1,
-    outfit_id: outfit2.id
+    outfit_id: outfit_ag_1.id
   })
