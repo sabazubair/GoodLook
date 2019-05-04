@@ -12,9 +12,7 @@ Rails.application.routes.draw do
       resources :outfits
 
       get 'wardrobe', to: 'user_outfits#show'
-      resources :users do
-        resources :user_outfits
-      end
+      resources :user_outfits
     end
   end
 end

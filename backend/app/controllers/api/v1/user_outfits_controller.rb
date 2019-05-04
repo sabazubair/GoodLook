@@ -1,5 +1,5 @@
 class Api::V1::UserOutfitsController < ApplicationController
- def index
+ def show
   # @user = User.find_by id: 2
 
   # @user_outfits = @user.user_outfits.map do |outfit|
