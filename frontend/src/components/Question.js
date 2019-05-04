@@ -28,9 +28,4 @@ export default class Question extends Component {
       return null;
     }
   }
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> saved-looks
