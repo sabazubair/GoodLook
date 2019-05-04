@@ -7,21 +7,22 @@ import ChoicesList from "./ChoicesList.js";
 import { Link } from "react-router-dom";
 
 export default class Question extends Component {
+
   render() {
-    console.log("question", this.props.question)
+    console.log("question", this.props.question);
+    let resultLink;
+
     if (this.props.display) {
       // Don't hard code ids, add lastQuestion to question
+
       return (
         <div>
-          {this.props.question.id}
           <Card.Header>
             <h5>{this.props.question.text}</h5>
           </Card.Header>
-          <ChoicesList 
-          choices={this.props.question.choices} 
+          <ChoicesList
+          choices={this.props.question.choices}
           nextQuestion={this.props.nextQuestion} />
-
-          {this.props.question.id === this.props.lastQuestion && <Link to="/result" > Find out your style </Link>}
         </div>
       );
     } else {
@@ -29,5 +30,3 @@ export default class Question extends Component {
     }
   }
 }
-
-// make conditional based on the 

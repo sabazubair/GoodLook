@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import axios from "axios"
 import Question from './Question.js'
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 
 export default class Quiz extends Component {
@@ -11,7 +12,7 @@ export default class Quiz extends Component {
       user: null,
       questions:[],
       activeQuestion:0,
-      resultLog:[]
+      resultLog:[],
     }
   }
 
@@ -32,7 +33,7 @@ export default class Quiz extends Component {
   }
 
   nextQuestion = (choice) => {
-    if (this.state.activeQuestion < this.state.questions.length - 1) {
+    if (this.state.activeQuestion < this.state.questions.length) {
       console.log(choice)
       let styleId = choice.style_id
       let resultLog = this.state.resultLog
@@ -85,12 +86,16 @@ export default class Quiz extends Component {
 }
 
   render(){
-    return (
-      <div >
-        <Card style={{ width:'25rem', margin:'5em auto' }}>
+    let display;
+    let componentToDisplay;
+    console.log('activeQuestion', this.state.activeQuestion);
+
+    if (this.state.activeQuestion === 15) {
+      componentToDisplay = <FindMyStyle />
+    } else {
+      componentToDisplay = <Card style={{ width:'25rem', margin:'5em auto' }}>
           {this.state.questions.map((item, idx) => {
-            const display = this.state.activeQuestion === idx;
-            const lastQuestion = this.state.questions[14].id
+            display = this.state.activeQuestion === idx;
 
             return <Question
               userId={this.state.user}
@@ -98,13 +103,15 @@ export default class Quiz extends Component {
               key={idx}
               display={display}
               nextQuestion={this.nextQuestion}
-              lastQuestion= {lastQuestion}
             />
           })}
         </Card>
+    }
+
+    return (
+      <div >
+        {componentToDisplay}
       </div>
-
     )
-
   }
 }

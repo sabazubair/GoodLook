@@ -4,7 +4,8 @@ module Api::V1
       @quiz = Question.all.sort_by {|question| question.order }.map do |question|
         { id: question.id,
           text: question.text,
-          choices: question.question_choices
+          choices: question.question_choices,
+          order: question.order
         }
       end
 
