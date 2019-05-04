@@ -687,7 +687,7 @@ result1 = Result.create(
 outfit1 = Outfit.create(
   {
     style_id: styles[0].id,
-    image: "/assets/ag_outfits/ag_abstractiontop.jpg",
+    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
     text: "Abstraction Top",
     link: "https://theunconventional.co.uk/dzhus-abstraction-top.html"
   })
