@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import axios from "axios"
 import Question from './Question.js'
+import FindMyStyle from './FindMyStyle.js'
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 
@@ -91,7 +92,8 @@ export default class Quiz extends Component {
     console.log('activeQuestion', this.state.activeQuestion);
 
     if (this.state.activeQuestion === 15) {
-      componentToDisplay = <FindMyStyle />
+      componentToDisplay = <FindMyStyle
+        question={this.state.questions[14]} />
     } else {
       componentToDisplay = <Card style={{ width:'25rem', margin:'5em auto' }}>
           {this.state.questions.map((item, idx) => {

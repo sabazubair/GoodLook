@@ -4,13 +4,11 @@ import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroup'
 import ChoicesList from "./ChoicesList.js";
-import { Link } from "react-router-dom";
 
 export default class Question extends Component {
 
   render() {
     console.log("question", this.props.question);
-    let resultLink;
 
     if (this.props.display) {
       // Don't hard code ids, add lastQuestion to question
