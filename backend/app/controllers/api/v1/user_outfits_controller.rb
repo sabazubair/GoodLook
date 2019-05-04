@@ -16,4 +16,16 @@ class Api::V1::UserOutfitsController < ApplicationController
 
    render json: @user_outfits
  end
+
+ def create
+  @user_outfit = UserOutfit.new(useroutfit_params)
+
+  if @user_outfit.save!
+    render json: @user_outfit
+  end
+ end
+
+ private def useroutfit_params
+  params.require(:user_outfit).permit(:user_id, :outfit_id)
+ end
 end
