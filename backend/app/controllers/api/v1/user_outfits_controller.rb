@@ -7,8 +7,9 @@ class Api::V1::UserOutfitsController < ApplicationController
   #     end
 
 
-
-   @user_outfits = UserOutfit.all.where(user_id: 2).map do |useroutfit|
+  @results = Result.all.sort_by {|result| result.id}.reverse!
+  @latest_result = @results[0]
+  @user_outfits = UserOutfit.all.where(user_id: @latest_result.user_id).map do |useroutfit|
        {
          outfit: Outfit.find_by(id: useroutfit.outfit_id)
        }
@@ -18,7 +19,9 @@ class Api::V1::UserOutfitsController < ApplicationController
  end
 
  def create
-  @user_outfit_exists = UserOutfit.find_by(user_id: useroutfit_params[:user_id], outfit_id: useroutfit_params[:outfit_id])
+  @results = Result.all.sort_by {|result| result.id}.reverse!
+  @latest_result = @results[0]
+  @user_outfit_exists = UserOutfit.find_by(user_id: @latest_result.user_id, outfit_id: useroutfit_params[:outfit_id])
 
   if @user_outfit_exists == nil
     @user_outfit = UserOutfit.new(useroutfit_params)

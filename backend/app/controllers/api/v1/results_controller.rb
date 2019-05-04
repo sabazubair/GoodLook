@@ -4,7 +4,7 @@ module Api::V1
   class ResultsController < ApplicationController
 
     def show
-      @results = Result.all.where(user_id: 2).sort_by {|result| result.id}.reverse!
+      @results = Result.all.sort_by {|result| result.id}.reverse!
       @latest_result = @results[0]
       @style = Style.find_by id: @latest_result.style_id
 

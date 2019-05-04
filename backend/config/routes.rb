@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       get 'quiz', to: 'quizzes#new'
       resources :quizzes
 
+      get 'user', to: 'users#create'
+
       get 'result', to: 'results#show'
       resources :results
 

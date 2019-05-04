@@ -6,15 +6,19 @@ export default class Recommendations extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      outfits:[]
+      outfits:[],
+      user: null
     }
   }
 
   componentDidMount() {
     axios("/api/v1/recommendations")
     .then(response => {
-      // console.log(response.data)
-      this.setState({outfits:response.data});
+      console.log(response.data);
+      this.setState({
+        outfits:response.data.outfits,
+        user:response.data.user_id
+      })
     })
     .catch(error => console.log(error))
   }
@@ -22,7 +26,7 @@ export default class Recommendations extends Component {
   onClick = (event) => {
     const saved_outfit_id = event.target.getAttribute('id');
     let body = {
-      user_id: 2,
+      user_id: this.state.user,
       outfit_id: saved_outfit_id
     }
 
