@@ -11,8 +11,9 @@ Rails.application.routes.draw do
       get 'recommendations', to: 'outfits#show'
       resources :outfits
 
+      get 'wardrobe', to: 'user_outfits#show'
       resources :users do
-        resources :outfits
+        resources :user_outfits
       end
     end
   end

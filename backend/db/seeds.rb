@@ -700,6 +700,14 @@ outfit2 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
+outfit3 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/ag_outfits/ag_blackmaxitop.jpg",
+    text: "Hello Tshirt",
+    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
+  })
+
 user_outfit1 = UserOutfit.create(
   {
     user_id: 2,
@@ -710,4 +718,10 @@ user_outfit2 = UserOutfit.create(
   {
     user_id: 1,
     outfit_id: outfit2.id
+  })
+
+user_outfit3 = UserOutfit.create(
+  {
+    user_id: 2,
+    outfit_id: outfit3.id
   })
