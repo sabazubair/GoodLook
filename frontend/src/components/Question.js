@@ -10,31 +10,24 @@ export default class Question extends Component {
   render() {
     console.log("question", this.props.question)
     if (this.props.display) {
-      if(this.props.question.id === 120){
-        return (
-          <div>
-            <Card.Header>
-              <h5>{this.props.question.text}</h5>
-            </Card.Header>
-            <ChoicesList 
-            choices={this.props.question.choices} 
-            nextQuestion={this.props.nextQuestion} />
-            <Link to="/result" > Find out your style </Link>
-          </div>
-        );
-      } else {
+      // Don't hard code ids, add lastQuestion to question
       return (
         <div>
+          {this.props.question.id}
           <Card.Header>
             <h5>{this.props.question.text}</h5>
           </Card.Header>
           <ChoicesList 
           choices={this.props.question.choices} 
           nextQuestion={this.props.nextQuestion} />
+
+          {this.props.question.id === this.props.lastQuestion && <Link to="/result" > Find out your style </Link>}
         </div>
       );
+    } else {
+      return null;
     }
   }
-  return null;
-  }
 }
+
+// make conditional based on the 
