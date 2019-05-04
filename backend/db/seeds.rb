@@ -567,7 +567,7 @@ question_choice_13d = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[3].id,
     text: nil,
-    image: "/assets/question_13/"
+    image: "/assets/question_13/katespadescarf.jpeg"
   })
 
 question_choice_13e = QuestionChoice.create(
@@ -575,7 +575,7 @@ question_choice_13e = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[4].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_13/beatsbydre.jpg"
   })
 
 # ----------- Question 14/15 -----------
