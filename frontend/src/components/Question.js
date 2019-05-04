@@ -10,7 +10,6 @@ export default class Question extends Component {
   render() {
     console.log("question", this.props.question)
     if (this.props.display) {
-      // Don't hard code ids, add lastQuestion to question
       return (
         <div>
           {this.props.question.id}
@@ -30,4 +29,3 @@ export default class Question extends Component {
   }
 }
 
-// make conditional based on the 
