@@ -58,7 +58,7 @@ question_choice_1b = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[1].id,
-    text: "b. Zoe Kravitz",
+    text: "b. Vanessa Hudgens",
     image: "/assets/question_1/boho_vh.jpg"
   })
 
@@ -82,7 +82,7 @@ question_choice_1e = QuestionChoice.create(
   {
     question_id: questions[0].id,
     style_id: styles[4].id,
-    text: "e. Vanessa Hudgens",
+    text: "e. Zoe Kravitz",
     image: "/assets/question_1/q1_zk4.jpg"
   })
 
