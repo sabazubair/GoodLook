@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 
 export default class Result extends Component {
   constructor(props) {
@@ -30,6 +32,7 @@ export default class Result extends Component {
       <h2>Your style is: {resultName}</h2>
       <p>{resultDescription}</p>
       <img width={500} height={500} src={resultImage}/>
+      <Link to="/afterquiz/recommendations" > See your recommendations </Link>
     </div>
     )
   }
