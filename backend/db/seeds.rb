@@ -181,7 +181,7 @@ question_choice_4b = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[1].id,
-    text: "b. I own a variety of prints like animal prints, floral prints and cultural patterns.",
+    text: "b. I own a variety of prints like animal prints, floral prints and ethnic prints.",
     image: nil
   })
 
@@ -288,7 +288,7 @@ question_choice_6e = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[4].id,
     text: "e. New York, USA",
-    image: "/assets/question_6/urb_newyork.jpg"
+    image: "/assets/question_6/newyork_cabs.jpg"
   })
 
 # ----------- Question 7/15 -----------
@@ -379,7 +379,7 @@ question_choice_9a = QuestionChoice.create(
     question_id: questions[8].id,
     style_id: styles[0].id,
     text: "a. The Matrix",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_9/matrix.jpg"
   })
 
 question_choice_9b = QuestionChoice.create(
@@ -387,7 +387,7 @@ question_choice_9b = QuestionChoice.create(
     question_id: questions[8].id,
     style_id: styles[1].id,
     text: "b. We Bought a Zoo",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_9/zoomovie.jpg"
   })
 
 question_choice_9c = QuestionChoice.create(
@@ -395,15 +395,15 @@ question_choice_9c = QuestionChoice.create(
     question_id: questions[8].id,
     style_id: styles[2].id,
     text: "c. Good Will Hunting",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_9/goodwillhunting.jpg"
   })
 
 question_choice_9d = QuestionChoice.create(
   {
     question_id: questions[8].id,
     style_id: styles[3].id,
-    text: "d. 27 Dresses",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    text: "d. The Devil Wears Prada",
+    image: "/assets/question_9/devilwearsprada.jpg"
   })
 
 question_choice_9e = QuestionChoice.create(
@@ -411,7 +411,7 @@ question_choice_9e = QuestionChoice.create(
     question_id: questions[8].id,
     style_id: styles[4].id,
     text: "e. Black Panther",
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_9/blackpanther.jpg"
   })
 
 # ----------- Question 10/15 -----------
@@ -543,7 +543,7 @@ question_choice_13a = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[0].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_13/ag_leathernecklace.jpg"
   })
 
 question_choice_13b = QuestionChoice.create(
@@ -551,7 +551,7 @@ question_choice_13b = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[1].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_13/rattanbag.jpeg"
   })
 
 question_choice_13c = QuestionChoice.create(
@@ -559,7 +559,7 @@ question_choice_13c = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[2].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_13/pearlbracelet.jpg"
   })
 
 question_choice_13d = QuestionChoice.create(
@@ -567,7 +567,7 @@ question_choice_13d = QuestionChoice.create(
     question_id: questions[12].id,
     style_id: styles[3].id,
     text: nil,
-    image: "https://cdn.vox-cdn.com/thumbor/KgVTrSluqxc2d4gkJnBrGUOI910=/0x0:6000x4005/1820x1213/filters:focal(2520x1523:3480x2483):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61648457/1029393662.jpg.0.jpg"
+    image: "/assets/question_13/"
   })
 
 question_choice_13e = QuestionChoice.create(
@@ -682,7 +682,7 @@ result1 = Result.create(
   })
 
 # OUTFIT SEED ------------------
-# AVANT-GARDE, style_id 0
+# AVANT-GARDE, STYLE_ID = 0
 
 outfit1 = Outfit.create(
   {
@@ -691,6 +691,16 @@ outfit1 = Outfit.create(
     text: "Abstraction Top",
     link: "https://theunconventional.co.uk/dzhus-abstraction-top.html"
   })
+
+outfit2 = Outfit.create(
+  {
+    style_id: styles[0].id,
+    image: "",
+    text: "",
+    link: ""
+  })
+
+#BOHO, STYLE_ID = 1
 
 outfit2 = Outfit.create(
   {
