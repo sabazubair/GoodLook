@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link className="navbar-brand" to="/">Good Look</Link>
+          <Link className="navbar-brand" to="/">GOOD LOOK</Link>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
@@ -19,7 +19,7 @@ export default class NavBar extends Component {
                 <Link className="nav-link" to="#">Login</Link>
               </li>
             </ul>
-            <span class="navbar-text">Welcome Back, Amita</span>
+            <span class="navbar-text">Welcome Back, Amita!</span>
           </div>
         </nav>
       </div>

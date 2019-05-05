@@ -86,21 +86,21 @@ export default class Quiz extends Component {
 
   render(){
         return (
-          <div >
-   <Card style={{ width:'25rem', margin:'5em auto' }}>
-          {this.state.questions.map((item, idx) => {
-            const display = this.state.activeQuestion === idx;
-            return <Question
-            userId={this.state.user}
-            question={item}
-            key={idx}
-            display={display}
-            nextQuestion={this.nextQuestion}
-             />
-          })}
-        </Card>
+          <div>
+            <h1 className="quiz-title">Style Persona Quiz</h1>
+            <Card style={{ width:'25rem', margin:'2em auto' }}>
+              {this.state.questions.map((item, idx) => {
+                const display = this.state.activeQuestion === idx;
+                return <Question
+                userId={this.state.user}
+                question={item}
+                key={idx}
+                display={display}
+                nextQuestion={this.nextQuestion}
+                />
+              })}
+            </Card>
           </div>
-
     )
 
   }

@@ -1,16 +1,18 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 
 export default class Footer extends Component {
   render () {
     return (
     <div>
-    <h1>Footer</h1>
-    <Link to= "/about" >About</Link>
-    <Link to= "/login" >Sign In</Link>
-    <Link to= "/meettheteam" >Meet The Team</Link>
-
-
+      <div class="card">
+        <h5 class="card-header">Featured</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
     </div>
     )
     }

@@ -1,3 +1,49 @@
+/* NAVBAR */
+.navbar-expand-lg.navbar-light.bg-light{
+  background-color: #EABCAC !important;
+  height: 100px !important;
+}
+.navbar-brand{
+  font-size: 30px;
+}
+.nav-item.active{
+ font-size: 20px;
+}
+.nav-item {
+  font-size: 20px;
+}
+
+/* INDEX PAGE */
+.index-background{
+  background-color:  #874E4C;
+}
+/* Quiz */
+.quiz-title {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 20px
+}
+/* Result > Celebrity Match Image */
+.result-image{
+  margin: 50px;
+}
+/* Result > Shop the Look */
+.btn.btn-info.btn-lg{
+  width: 300px;
+}
+
+/* After Quiz Nav */
+.after-quiz-nav{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #32485C;
+}
+/* NOT WORKING - SPACE BUTTONS */
+.after-quiz-1 .after-quiz-2 .after-quiz-3{
+  margin: 20px;
+  width: 30px;
+}
 
 .jumbotron {
   background-color: #EABCAC;
@@ -5,6 +51,10 @@
 
 .meettheteam {
   background-color: #874E4C;
+}
+
+.about{
+  background-color: #E2B091;
 }
 
 .App {
