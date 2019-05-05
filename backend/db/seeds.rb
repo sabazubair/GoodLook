@@ -751,7 +751,7 @@ outfit_ag_8= Outfit.create(
 outfit_ag_9= Outfit.create(
    {
       style_id: styles[0].id,
-      image: "/assets/ag_outfits/",
+      image: "/assets/ag_outfits/ag_asymmetriclinenshirtdress.jpg",
       text: "Asymmetric Linen Shirt Dress",
       link: "https://theunconventional.co.uk/barbara-i-gongini-asymmetric-linen-shirt-dress.html"
     })
