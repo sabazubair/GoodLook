@@ -114,7 +114,8 @@ export default class Quiz extends Component {
               nextQuestion={this.nextQuestion}
             />
           })}
-        </Card>;
+        </Card>
+      </div>
     }
 
     return (
