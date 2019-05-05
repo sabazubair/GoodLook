@@ -86,6 +86,8 @@ question_choice_1e = QuestionChoice.create(
     image: "/assets/question_1/q1_zk4.jpg"
   })
 
+
+
 # ----------- Question 2/15 -----------
 question_choice_2a = QuestionChoice.create(
   {
