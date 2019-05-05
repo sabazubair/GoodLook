@@ -30,9 +30,20 @@ export default class TestingWardrobe extends Component {
     .then((response)=>{
       console.log(response);
       console.log("Outfit has been deleted");
+
+      const updatedOutfits = this.state.outfits;
+      const indexOfClickedOutfit = this.state.outfits.map( e => e.id ).indexOf( parseInt(saved_outfit_transaction_id));
+
+      for(let i = 0; i < updatedOutfits.length; i++){
+        if (i === indexOfClickedOutfit) {
+           updatedOutfits.splice(indexOfClickedOutfit, 1);
+        }
+      }
+
+      this.setState({ outfits: updatedOutfits })
     })
 
-    window.location.reload();
+
   }
 
   render() {
