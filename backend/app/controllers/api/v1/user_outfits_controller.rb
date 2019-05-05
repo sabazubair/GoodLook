@@ -11,11 +11,17 @@ class Api::V1::UserOutfitsController < ApplicationController
   @latest_result = @results[0]
   @user_outfits = UserOutfit.all.where(user_id: @latest_result.user_id).map do |useroutfit|
        {
-         outfit: Outfit.find_by(id: useroutfit.outfit_id)
+        id: useroutfit.id,
+        outfit: Outfit.find_by(id: useroutfit.outfit_id)
        }
      end
 
-   render json: @user_outfits
+  @user_outfits_with_user = {
+    user_id: @latest_result.user_id,
+    outfits: @user_outfits
+  }
+
+   render json: @user_outfits_with_user
  end
 
  def create
@@ -28,11 +34,12 @@ class Api::V1::UserOutfitsController < ApplicationController
     @user_outfit.save!
     render json: @user_outfit
   end
+ end
 
+ def destroy
+  @outfit = UserOutfit.find_by(id: params[:id])
 
-  # if @user_outfit.save!
-  #   render json: @user_outfit
-  # end
+  @outfit.destroy
  end
 
  private def useroutfit_params

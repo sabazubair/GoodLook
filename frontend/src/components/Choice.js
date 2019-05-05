@@ -1,16 +1,15 @@
-    
+
 import React, {Component} from 'react';
 import ListGroup from 'react-bootstrap/ListGroup'
-import ListGroupItem from 'react-bootstrap/ListGroup'
 
 
 class Choice extends Component {
-  
+
    Next = () => {
     const choice = this.props.choice;
     this.props.nextQuestion(choice)
   }
-  
+
   render() {
     return (
       <ListGroup.Item onClick={this.Next}>

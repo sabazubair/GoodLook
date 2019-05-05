@@ -6,25 +6,50 @@ export default class TestingWardrobe extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      outfits:[]
+      outfits:[],
+      user: null
     }
   }
 
   componentDidMount() {
     axios("/api/v1/wardrobe")
     .then(response => {
-      // console.log(response.data)
-      this.setState({outfits:response.data});
+      console.log(response.data)
+      this.setState({
+        outfits:response.data.outfits,
+        user:response.data.user_id
+      });
     })
     .catch(error => console.log(error))
   }
 
+  deleteLook = (event) => {
+    const saved_outfit_transaction_id = event.target.getAttribute('saved_id');
+
+    axios.delete(`/api/v1/user_outfits/${saved_outfit_transaction_id}`)
+    .then((response)=>{
+      console.log(response);
+      console.log("Outfit has been deleted");
+    })
+
+    window.location.reload();
+  }
+
   render() {
+    let warning;
+    if (this.state.outfits.length === 0) {
+      warning = <p>Looks like your wardrobe is empty. Click on your recommendations and find some great looks!</p>
+    }
+
     const test = this.state.outfits.map(outfit => {
-          return <img id={outfit.outfit.id} style={{width:'20%'}} src={outfit.outfit.image} />
+          return (<div>
+          <img id={outfit.outfit.id} style={{width:'20%'}} src={outfit.outfit.image} />
+          <i className="fas fa-trash-alt" saved_id={outfit.id} onClick={this.deleteLook}></i>
+          </div>)
     })
     return (
-        <ListGroup.Item onClick={this.onClick}>
+        <ListGroup.Item>
+          {warning}
           {test}
         </ListGroup.Item>
     )
