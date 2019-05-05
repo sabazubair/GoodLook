@@ -43,11 +43,17 @@ export default class TestingWardrobe extends Component {
   }
 
   render() {
+    let warning;
+    if (this.state.outfits.length === 0) {
+      warning = <p>Looks like your wardrobe is empty. Click on your recommendations and find some great looks!</p>
+    }
+
     const test = this.state.outfits.map(outfit => {
           return <img saved_id={outfit.id} id={outfit.outfit.id} style={{width:'20%'}} src={outfit.outfit.image} />
     })
     return (
         <ListGroup.Item onClick={this.deleteLook}>
+          {warning}
           {test}
         </ListGroup.Item>
     )
