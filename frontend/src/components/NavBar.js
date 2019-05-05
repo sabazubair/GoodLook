@@ -12,14 +12,14 @@ export default class NavBar extends Component {
               <li className="nav-item active">
                 <Link className="nav-link" to="/about">About<span class="sr-only">(current)</span></Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="/meettheteam">Meet the Team</Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="#">Login</Link>
               </li>
             </ul>
-            <span class="navbar-text">Welcome Back, Amita!</span>
+            <span className="navbar-text">Welcome Back, Amita!</span>
           </div>
         </nav>
       </div>

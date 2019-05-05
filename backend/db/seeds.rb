@@ -701,7 +701,7 @@ outfit_ag_2= Outfit.create(
     text: "Black Maxi Top",
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
-  
+
 outfit_ag_3= Outfit.create(
   {
     style_id: styles[0].id,
@@ -785,12 +785,6 @@ outfit_boho_3 = Outfit.create(
     link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
   })
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> b1e317d65cad6a51eaace7fff5a087fbd133d6ec
 #USER OUTFITS
 user_outfit2 = UserOutfit.create(
   {
