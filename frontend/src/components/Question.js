@@ -16,8 +16,8 @@ export default class Question extends Component {
             <Card.Header>
               <h5>{this.props.question.text}</h5>
             </Card.Header>
-            <ChoicesList 
-            choices={this.props.question.choices} 
+            <ChoicesList
+            choices={this.props.question.choices}
             nextQuestion={this.props.nextQuestion} />
             <Link to="/result" > Find out your style </Link>
           </div>
@@ -28,8 +28,8 @@ export default class Question extends Component {
           <Card.Header>
             <h5>{this.props.question.text}</h5>
           </Card.Header>
-          <ChoicesList 
-          choices={this.props.question.choices} 
+          <ChoicesList
+          choices={this.props.question.choices}
           nextQuestion={this.props.nextQuestion} />
         </div>
       );

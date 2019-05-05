@@ -17,12 +17,24 @@
 .index-background{
   background-color:  #874E4C;
 }
+
+/* MEET THE TEAM - Staff Images*/
+.rounded-circle{
+  width: 10rem;
+}
+
 /* Quiz */
 .quiz-title {
   text-align: center;
   border-bottom: 1px solid black;
-  padding: 20px
+  padding: 20px;
 }
+
+.questionWrap img{
+  height: 100%;
+  width: 50%;
+}
+
 /* Result > Celebrity Match Image */
 .result-image{
   margin: 50px;
@@ -38,11 +50,6 @@
   padding: 20px;
   color: white;
   background-color: #32485C;
-}
-/* NOT WORKING - SPACE BUTTONS */
-.after-quiz-1 .after-quiz-2 .after-quiz-3{
-  margin: 20px;
-  width: 30px;
 }
 
 .jumbotron {
