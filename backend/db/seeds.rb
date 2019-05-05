@@ -762,33 +762,81 @@ outfit_ag_9= Outfit.create(
 outfit_boho_1 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/ag_outfits/ag_abstractiontop.jpg",
-    text: "Black Maxi Top",
-    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
+    image: "/assets/boho_outfits/boho_flarepants.jpg",
+    text: "Flare Pants",
+    link: "https://www.threebirdnest.com/collections/whats-new/products/soria-ruffled-tulip-hem-flare-pants-brown"
   })
 
 outfit_boho_2 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/question_1/boho_vh.jpg",
-    text: "Hello Tshirt",
-    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
+    image: "/assets/boho_outfits/boho_tiedye",
+    text: "Tie Dye Maxi Dress",
+    link: "https://www.threebirdnest.com/collections/dresses/products/estella-tie-dye-plunge-maxi-dress-mocha"
   })
 
 outfit_boho_3 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/question_1/q1_zk4.jpg",
-    text: "Hello Tshirt",
-    link: "https://www.etsy.com/ca/listing/510008898/new-summer-top-black-cotton-shirt-black?ref=related-3"
+    image: "/assets/boho_outfits/boho_floraljumpsuit",
+    text: "Floral Jumpsuit",
+    link: "https://www.threebirdnest.com/collections/dresses/products/montana-floral-print-jumpsuit-mustard"
   })
 
-<<<<<<< HEAD
+outfit_boho_4 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_romperplaysuit.jpg",
+    text: "Romper Playsuit",
+    link: "https://www.threebirdnest.com/collections/whats-new/products/sunday-harem-romper-playsuit-mustard"
+  })
+
+outfit_boho_5 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_offshoulderdress.jpg",
+    text: "Off Shoulder Dress",
+    link: "https://www.threebirdnest.com/collections/whats-new/products/carmella-embroidered-off-shoulder-ruffle-layered-shift-dress-sand"
+  })
+
+outfit_boho_6 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_embroidereddress.jpg",
+    text: "Embroidered Dress",
+    link: "https://www.threebirdnest.com/collections/whats-new/products/costa-mesa-embroidered-maxi-dress-mustard"
+  })
+
+outfit_boho_7 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_maxishirt.jpg",
+    text: "Floral Maxi Skirt",
+    link: "https://www.threebirdnest.com/collections/whats-new/products/seville-maxi-skirt-floral"
+  })
+
+outfit_boho_8 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_dustybluemaxidress.jpg",
+    text: "Dusty Blue Maxi Dress",
+    link: "https://www.threebirdnest.com/collections/dresses/products/sweet-memories-button-front-maxi-dress-dusty-blue"
+  })
+
+outfit_boho_9 = Outfit.create(
+  {
+    style_id: styles[1].id,
+    image: "/assets/boho_outfits/boho_whiteminidress.jpg",
+    text: "White Mini Dress",
+    link: "https://www.threebirdnest.com/collections/dresses/products/hayden-embroidered-mini-dress-cream"
+  })
 
 
 
-=======
->>>>>>> b1e317d65cad6a51eaace7fff5a087fbd133d6ec
+
+
+
+
 #USER OUTFITS
 user_outfit2 = UserOutfit.create(
   {
