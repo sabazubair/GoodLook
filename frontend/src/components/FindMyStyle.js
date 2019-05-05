@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
-import ChoicesList from "./ChoicesList.js";
+import ListGroup from 'react-bootstrap/ListGroup'
 
 export default class FindMyStyle extends Component {
   render() {
@@ -11,8 +11,14 @@ export default class FindMyStyle extends Component {
           <Card.Header>
             <h5>{this.props.question.text}</h5>
           </Card.Header>
-          <ChoicesList
-          choices={this.props.question.choices} />
+          <ListGroup variant="flush">
+            {this.props.question.choices.map((choice, index) => {
+              return (<ListGroup.Item>
+                {choice.text}
+                <img style={{width:'40%'}}src={choice.image}/>
+              </ListGroup.Item>)
+            })}
+          </ListGroup>
           <Link to="/result">Find my style</Link>
         </Card>
       </div>

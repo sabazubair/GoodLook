@@ -28,12 +28,15 @@ class Api::V1::UserOutfitsController < ApplicationController
     @user_outfit.save!
     render json: @user_outfit
   end
-
-
-  # if @user_outfit.save!
-  #   render json: @user_outfit
-  # end
  end
+
+ # def destroy
+ #  @results = Result.all.sort_by {|result| result.id}.reverse!
+ #  @latest_result = @results[0]
+ #  @outfit = UserOutfit.find_by(user_id: @latest_result.user_id, outfit_id: useroutfit_params[:outfit_id])
+
+ #  @outfit.destroy
+ # end
 
  private def useroutfit_params
   params.require(:user_outfit).permit(:user_id, :outfit_id)
