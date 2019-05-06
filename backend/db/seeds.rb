@@ -836,14 +836,230 @@ outfit_boho_9 = Outfit.create(
 # CLASSIC, STYLE_ID = 2
 outfit_classic_1 = Outfit.create(
     {
-      style_id: styles[1].id,
-      image: "/assets//",
-      text: "",
-      link: ""
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_dressshirt.jpg",
+      text: "Shirt Dress",
+      link: "https://www.simons.ca/en/women-clothing/dresses/straight/patch-pocket-poplin-shirtdress--14509-21905?catId=6680&colourId=79"
     })
 
+outfit_classic_2 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_florallacedress.jpg",
+      text: "Floral Lace Dress",
+      link: "https://www.simons.ca/en/women-clothing/dresses/fit-flare/floral-lace-dress--6914-4609?catId=6680&colourId=70"
+    })
+
+outfit_classic_3 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_linendress.jpg",
+      text: "Country Linen Dress ",
+      link: "https://www.simons.ca/en/women-clothing/dresses/fit-flare/country-linen-dress--6914-21439?catId=6680&colourId=49#zoom"
+     })
+
+outfit_classic_4 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_suspenderdress.jpg",
+      text: "Suspender Midi Dress",
+      link: "https://www.simons.ca/en/women-clothing/skirts/midi/suspender-midi-skirt--6914-21380?catId=c7038&colourId=44#zoom"
+    })
+
+outfit_classic_5 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_knotteddress.jpg",
+      text: "Knotted Dress ",
+      link: "https://www.simons.ca/en/women-clothing/dresses/fit-flare/broderie-anglaise-knotted-dress--8535-19076?catId=c7038&colourId=20"
+    })
+
+outfit_classic_6 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_cottonmididress.jpg",
+      text: "Midi Shirt Dress",
+      link: "https://www.simons.ca/en/women-clothing/dresses/shirt-dresses/striped-poplin-midi-shirtdress--14509-21907?catId=c1522&colourId=66"
+    })
+
+outfit_classic_7 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_floralblouse.jpg",
+      text: "Floral Blouse",
+      link: "https://www.simons.ca/en/women-clothing/blouses-shirts/blouses/loose-floral-breeze-blouse--12704-22184?catId=c1522&colourId=15"
+    })
+
+outfit_classic_8 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_slimanklepants.jpg",
+      text: "Slim Ankle Pants",
+      link: "https://www.simons.ca/en/women-clothing/pants/semi-slim/semi-slim-ankle-pant--11664-20709?catId=8775&colourId=11"
+    })
+
+outfit_classic_9 = Outfit.create(
+    {
+      style_id: styles[2].id,
+      image: "/assets/classic_outfits/classic_tiebeltdress.jpg",
+      text: "Tie Belt Dress",
+      link: "https://www.simons.ca/en/women-clothing/dresses/straight/printed-tie-belt-dress--12562-21644?catId=c1522&colourId=79"
+   })
 
 
+# ROMANTIC, STYLE_ID = 3
 
+outfit_romantic_1 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_palebluedress.jpg",
+    text: "Pale Blue Dress",
+    link: "https://shop.nordstrom.com/s/ted-baker-london-meline-side-bow-detail-dress/5213188?origin=coordinating-5213188-0-2-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194339"
+   })
 
+outfit_romantic_2 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_knitdress.jpg",
+    text: "Knit Dress",
+    link: "https://shop.nordstrom.com/s/ted-baker-london-vellia-flippy-knit-skater-dress/5194339?origin=coordinating-5194339-0-4-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194340"
+  })
+
+outfit_romantic_3 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_skaterdress.jpg",
+    text: "Skater Dress",
+    link: "https://shop.nordstrom.com/s/ted-baker-london-chestna-oracle-skater-dress/5213185?origin=coordinating-5213185-0-2-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194340"
+  })
+
+outfit_romantic_4 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_lacetop.jpg",
+    text: "Lace Top",
+    link: "https://shop.nordstrom.com/s/free-people-daniella-lace-top/4826512?origin=category-personalizedsort&fashioncolor=BLUE"
+  })
+
+outfit_romantic_5 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_offtheshoulder.jpeg",
+    text: "Off The Shoulder Dress",
+    link: "https://shop.nordstrom.com/s/eliza-j-off-the-shoulder-ruffle-sheath-dress-regular-petite/4566687?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=blue"
+  })
+
+outfit_romantic_6 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_flaredress.jpg",
+    text: "Flare Dress",
+    link: "https://shop.nordstrom.com/s/ieena-for-mac-duggal-double-v-neck-fit-flare-party-dress/5161414?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=black"
+  })
+
+outfit_romantic_7 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_highlowdress.jpg",
+    text: "High Low Dress",
+    link: "https://shop.nordstrom.com/s/xscape-high-low-dress/4572231?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=black"
+  })
+
+outfit_romantic_8 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_ruffledress.jpg",
+    text: "Ruffle Dress",
+    link: "https://shop.nordstrom.com/s/wayf-chelsea-tiered-ruffle-maxi-dress-regular-plus/4926277?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=lilac%20blossom%20floral"
+  })
+
+outfit_romantic_9 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_lacedress.jpg",
+    text: "Lace Midi Dress",
+    link: "https://shop.nordstrom.com/s/astr-the-label-lace-midi-dress/4565648?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=aqua"
+  })
+
+outfit_romantic_9 = Outfit.create(
+  {
+    style_id: styles[3].id,
+    image: "/assets/rom_outfits/rom_lacedress.jpg",
+    text: "Lace Midi Dress",
+    link: "https://shop.nordstrom.com/s/astr-the-label-lace-midi-dress/4565648?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=aqua"
+  })
+
+# URBAN, STYLE_ID = 4
+outfit_urban_1 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_adidas.jpg",
+    text: "Adidas Crop Hoodie",
+    link: "https://www.zumiez.com/adidas-3-stripe-green-crop-hoodie.html"
+  })
+
+outfit_urban_2 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_trackjacket.jpg",
+    text: "Adidas Track Jacket",
+    link: "https://www.zumiez.com/adidas-3-stripe-tulle-red-track-jacket.html"
+  })
+
+outfit_urban_3 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_mididress.jpg",
+    text: "Midi Dress",
+    link: "https://urban-planet.com/collections/si_dresses_shop-all-dresses/products/0930-30680644-contrast-side-stripe-sleeveless-scoop-neck-midi-dress"
+  })
+
+outfit_urban_4 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_minidress.jpg",
+    text: "Short Sleeve Mini Dress",
+    link: "https://urban-planet.com/collections/si_dresses_shop-all-dresses/products/0927-39075230-check-short-sleeve-shirt-mini-dress"
+  })
+
+outfit_urban_5 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_pullover.jpg",
+    text: "Pullover Hoodie",
+    link: "https://www.karmaloop.com/product/champion-red-the-women-s-reverse-weave-cropped-colorblock-pullover-hood-in-red-spark-oxford-grey-and-imperial-indigo"
+  })
+
+outfit_urban_6 = Outfit.create(
+    {
+      style_id: styles[4].id,
+      image: "/assets/urban_outfits/urban_dickiestop.jpg",
+      text: "Dickies Boyfriend Shirt",
+      link: "https://www.asos.com/dickies/dickies-boyfriend-t-shirt-with-front-logo/prd/7965170?clr=bk-black&colourWayId=15365322&SearchQuery=&cid=25647&gridcolumn=2&gridrow=10&gridsize=4&pge=1&pgesize=72&totalstyles=243"
+    })
+
+outfit_urban_7 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_sportsjacket.jpg",
+    text: "Denim Jacket",
+    link: "https://www.urbanoutfitters.com/en-ca/shop/lacoste-allover-print-denim-bomber-jacket?category=womens-clothing&color=092"
+  })
+
+outfit_urban_8 = Outfit.create(
+  {
+    style_id: styles[4].id,
+    image: "/assets/urban_outfits/urban_widelegpants.jpg",
+    text: "Wide Leg pants",
+    link: "https://shop.lululemon.com/p/women-pants/On-The-Fly-Pant-Wide-Leg-31/_/prod8980322?color=34201"
+  })
+
+outfit_urban_9 = Outfit.create(
+    {
+      style_id: styles[4].id,
+      image: "/assets/urban_outfits/urban_beltbag.jpg",
+      text: "Leather Belt Bag",
+      link: "https://www.urbanoutfitters.com/en-ca/shop/adidas-originals-faux-leather-belt-bag?category=womens-clothing&color=001"
+    })
+  
 

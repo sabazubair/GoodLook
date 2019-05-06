@@ -18,6 +18,13 @@
   background-color:  #874E4C;
 }
 
+/* ABOUT PAGE */
+.about{
+  margin: 30px;
+  background-color: #E2B091;
+}
+
+
 /* MEET THE TEAM - Staff Images*/
 .rounded-circle{
   width: 10rem;
@@ -66,9 +73,7 @@
   background-color: #874E4C;
 }
 
-.about{
-  background-color: #E2B091;
-}
+
 
 .App {
   text-align: center;
