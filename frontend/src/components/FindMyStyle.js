@@ -7,7 +7,7 @@ export default class FindMyStyle extends Component {
   render() {
     return (
       <div>
-        <Card style={{ width:'25rem', margin:'5em auto' }}>
+        <Card style={{ width:'25rem', margin:'5em auto 0px auto' }}>
           <Card.Header>
             <h5>{this.props.question.text}</h5>
           </Card.Header>
@@ -19,8 +19,11 @@ export default class FindMyStyle extends Component {
               </ListGroup.Item>)
             })}
           </ListGroup>
-          <Link to="/result">Find my style</Link>
         </Card>
+
+        <div className="quizResultBtn">
+          <Link className="full-width-button btn btn-success" to="/result">Find my style</Link>
+        </div>
       </div>
     )
   }
