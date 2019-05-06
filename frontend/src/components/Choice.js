@@ -10,7 +10,7 @@ class Choice extends Component {
   }
 
   render() {
-    const img = this.props.choice.image ? <img src={this.props.choice.image}/> : null
+    const img = this.props.choice.image ? <img src={this.props.choice.image}/> : null;
     return (
       <ListGroup.Item className="questionWrap d-flex flex-row justify-content-between" onClick={this.Next}>
         {this.props.choice.text}
