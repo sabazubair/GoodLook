@@ -24,7 +24,6 @@
   background-color: #E2B091;
 }
 
-
 /* MEET THE TEAM - Staff Images*/
 .rounded-circle{
   width: 10rem;
@@ -70,10 +69,12 @@
 }
 
 .meettheteam {
-  background-color: #874E4C;
+  background-color: #F7DFD4;
 }
 
-
+.footer{
+  background-color: #32485C;
+}
 
 .App {
   text-align: center;

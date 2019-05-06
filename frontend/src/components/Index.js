@@ -26,7 +26,8 @@ export default class Index extends Component {
             <div className="icons col-xl-4 col-lg-4 col-md-6 col-sm-12">
               <div className="row">
                 <div className="welcomeText col-12">
-                  <h1>"Style is like personality, it's innate. Fashion is cyclical."</h1>
+                  <h1><i>"Style is like personality, it's innate. Fashion is cyclical."</i></h1>
+                    <hr></hr>
                     <p>Want to find your style?</p>
                 </div>
               </div>
@@ -35,7 +36,7 @@ export default class Index extends Component {
                   <p><i className="far fa-question-circle fa-3x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Take our Quiz to Find your Style</p>
+                  <p>Take our Quiz to Generate Looks</p>
                 </div>
               </div>
               <div className="row">
