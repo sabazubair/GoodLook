@@ -1,12 +1,5 @@
 class Api::V1::UserOutfitsController < ApplicationController
  def show
-  # @user = User.find_by id: 2
-
-  # @user_outfits = @user.user_outfits.map do |outfit|
-  #       outfit.outfit_id
-  #     end
-
-
   @results = Result.all.sort_by {|result| result.id}.reverse!
   @latest_result = @results[0]
   @user_outfits = UserOutfit.all.where(user_id: @latest_result.user_id).map do |useroutfit|
