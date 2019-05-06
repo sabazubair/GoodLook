@@ -7,20 +7,23 @@ export default class FindMyStyle extends Component {
   render() {
     return (
       <div>
-        <Card style={{ width:'25rem', margin:'5em auto 0px auto' }}>
-          <Card.Header>
-            <h5>{this.props.question.text}</h5>
-          </Card.Header>
-          <ListGroup variant="flush">
-            {this.props.question.choices.map((choice, index) => {
-              return (<ListGroup.Item>
-                {choice.text}
-                <img style={{width:'40%'}}src={choice.image}/>
-              </ListGroup.Item>)
-            })}
-          </ListGroup>
-        </Card>
-
+        <div className="container">
+          <h1 className="quiz-title">Style Persona Quiz</h1>
+          <Card style={{ width:'25rem', margin:'2em auto' }}>
+            <Card.Header>
+              <h5>{this.props.question.text}</h5>
+              <p style={{backgroundColor:"pink"}}>15 / 15</p>
+            </Card.Header>
+            <ListGroup variant="flush">
+              {this.props.question.choices.map((choice, index) => {
+                return (<ListGroup.Item className="questionWrap d-flex flex-row justify-content-between">
+                  {choice.text}
+                  <img style={{width:'40%'}}src={choice.image}/>
+                </ListGroup.Item>)
+              })}
+            </ListGroup>
+          </Card>
+        </div>
         <div className="quizResultBtn">
           <Link className="full-width-button btn btn-success" to="/result">Find my style</Link>
         </div>

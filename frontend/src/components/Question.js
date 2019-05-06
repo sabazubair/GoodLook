@@ -2,7 +2,6 @@
 import React, {Component} from 'react';
 import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
-import ListGroupItem from 'react-bootstrap/ListGroup'
 import ChoicesList from "./ChoicesList.js";
 
 export default class Question extends Component {
@@ -16,6 +15,7 @@ export default class Question extends Component {
         <div>
           <Card.Header>
             <h5>{this.props.question.text}</h5>
+            <p style={{backgroundColor:"pink"}}>{this.props.activeQuestion + 1} / 15</p>
           </Card.Header>
           <ChoicesList
           choices={this.props.question.choices}

@@ -107,6 +107,7 @@ export default class Quiz extends Component {
               {this.state.questions.map((item, idx) => {
             display = this.state.activeQuestion === idx;
             return <Question
+              activeQuestion={this.state.activeQuestion}
               userId={this.state.user}
               question={item}
               key={idx}
