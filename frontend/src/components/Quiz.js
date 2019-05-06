@@ -123,6 +123,6 @@ export default class Quiz extends Component {
       <div>
         {componentToDisplay}
       </div>
-    );
+    )
   }
 }
