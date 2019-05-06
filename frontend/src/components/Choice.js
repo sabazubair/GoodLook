@@ -4,7 +4,6 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 
 class Choice extends Component {
-
    Next = () => {
     const choice = this.props.choice;
     this.props.nextQuestion(choice)

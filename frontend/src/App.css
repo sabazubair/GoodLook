@@ -35,9 +35,15 @@
   width: 50%;
 }
 
+/* Find my style button */
+.quizResultBtn{
+  margin: 20px auto 5em auto;
+  width: 25rem;
+}
+
 /* Result > Celebrity Match Image */
 .result-image{
-  margin: 50px;
+  width: 100%;
 }
 /* Result > Shop the Look */
 .btn.btn-info.btn-lg{
