@@ -5,7 +5,8 @@ class Api::V1::OutfitsController < ApplicationController
     @outfits = Outfit.all.where style_id: @latest_result.style_id
     @outfit_and_user = {
       user_id: @latest_result.user_id,
-      outfits: @outfits
+      outfits: @outfits,
+      userOutfits: UserOutfit.all.where(user_id: @latest_result.user_id)
     }
 
     render json: @outfit_and_user

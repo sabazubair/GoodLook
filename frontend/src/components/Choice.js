@@ -12,9 +12,9 @@ class Choice extends Component {
 
   render() {
     return (
-      <ListGroup.Item onClick={this.Next}>
+      <ListGroup.Item className="questionWrap d-flex flex-row justify-content-between" onClick={this.Next}>
         {this.props.choice.text}
-        <img style={{width:'40%'}}src={this.props.choice.image}/>
+        <img src={this.props.choice.image}/>
         </ListGroup.Item>
     );
   }

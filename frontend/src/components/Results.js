@@ -29,10 +29,12 @@ export default class Result extends Component {
 
     return (
     <div>
-      <h2>Your style is: {resultName}</h2>
-      <p>{resultDescription}</p>
-      <img width={500} height={500} src={resultImage}/>
-      <Link to="/afterquiz/recommendations" > See your recommendations </Link>
+      <div className="text-center">
+        <h2 style={{padding: 15}}>Your style persona is: {resultName}!</h2>
+        <p>{resultDescription}</p>
+      </div>
+        <img className="result-image" width={500} height={400} src={resultImage}/>
+        <Link className="btn btn-info btn-lg" to="/afterquiz/recommendations">Shop the Look</Link>
     </div>
     )
   }

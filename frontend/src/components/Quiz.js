@@ -101,10 +101,11 @@ export default class Quiz extends Component {
         question={this.state.questions[14]}/>
     } else {
       componentToDisplay =
-        <Card style={{ width:'25rem', margin:'5em auto' }}>
-          {this.state.questions.map((item, idx) => {
+          <div className="container">
+            <h1 className="quiz-title">Style Persona Quiz</h1>
+            <Card style={{ width:'25rem', margin:'2em auto' }}>
+              {this.state.questions.map((item, idx) => {
             display = this.state.activeQuestion === idx;
-
             return <Question
               userId={this.state.user}
               question={item}
@@ -113,7 +114,8 @@ export default class Quiz extends Component {
               nextQuestion={this.nextQuestion}
             />
           })}
-        </Card>;
+        </Card>
+      </div>
     }
 
     return (
