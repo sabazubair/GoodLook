@@ -20,13 +20,13 @@ questions = Question.create([
   {text: "Who's your style icon?", order: 1},
   {text: "What room would you hang out in?", order: 2},
   {text: "When you walk into a crowded room, what would you do?", order: 3},
-  {text: "What materials do you own?", order: 4},
+  {text: "How would your friends describe you?", order: 4},
   {text: "What artwork would you hang on your wall?", order: 5},
   {text: "What city would you live in?", order: 6},
-  {text: "What is your favourite fragrance?", order: 7},
-  {text: "What personality do you most aspire to?", order: 8},
-   {text: "Your local theatre's playing a few old movies. What movie would you watch?", order: 9},
-  {text: "What is your shopping philosophy?", order: 10},
+  {text: "You're ordering food at your favourite restaurant, how do you decide?", order: 7},
+  {text: "You're looking for a fragrance in the perfume section. Which one would you try first?", order: 8},
+  {text: "Your local theatre's playing a few old movies. What movie would you watch?", order: 9},
+  {text: "Looks like you've got to go shopping. You shop based on:", order: 10},
   {text: "It's Friday night and you're going on a date. What do you want to do?", order: 11},
   {text: "If you were to win a closet makeover from two of your favourite stores, which would they be?", order: 12},
   {text: "What is your favourite accessory?", order: 13},
@@ -175,7 +175,7 @@ question_choice_4a = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[0].id,
-    text: "a. I love cotton for its durability and comfort, but what matters most to me is that my clothing is unique to me.",
+    text: "a. Daring",
     image: nil
   })
 
@@ -183,7 +183,7 @@ question_choice_4b = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[1].id,
-    text: "b. I own a variety of prints like animal prints, floral prints and ethnic prints.",
+    text: "b. Easygoing",
     image: nil
   })
 
@@ -191,7 +191,7 @@ question_choice_4c = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[2].id,
-    text: "c. When I buy clothing, I am looking for quality. Most of my clothing is made from cotton, linen, pure denim and leather.",
+    text: "c. Strategic",
     image: nil
   })
 
@@ -199,7 +199,7 @@ question_choice_4d = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[3].id,
-    text: "d. I have a few expensive pieces like silk, velvet, chiffon but I generally wear anything with florals and pastel colors.",
+    text: "d. Vivacious",
     image: nil
   })
 
@@ -207,7 +207,7 @@ question_choice_4e = QuestionChoice.create(
   {
     question_id: questions[3].id,
     style_id: styles[4].id,
-    text: "e. It doesn’t matter. I buy whatever is in season and looks good.",
+    text: "e. Practical",
     image: nil
   })
 
@@ -298,40 +298,40 @@ question_choice_7a = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[0].id,
-    text: "a. Mad et Len, Blackmusk",
-    image: "/assets/question_7/ag_fragrance.jpg"
+    text: "a. Try out a new dish you haven't ordered before",
+    image: nil
   })
 
 question_choice_7b = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[1].id,
-    text: "b. Saje, Goddess Natural Perfume",
-    image: "/assets/question_7/boho_naturalperfume.jpg"
+    text: "b. Order a party platter to share with everyone",
+    image: nil
   })
 
 question_choice_7c = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[2].id,
-    text: "c. Yves Saint Laurent, Black Opium",
-    image: "/assets/question_7/class_blackopium.jpg"
+    text: "c. Go with the one you always order",
+    image: nil
   })
 
 question_choice_7d = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[3].id,
-    text: "d. Marc Jacobs, Daisy",
-    image: "/assets/question_7/rom_marcjacobs.jpg"
+    text: "d. Order the dish that looks Instagram worthy",
+    image: nil
   })
 
 question_choice_7e = QuestionChoice.create(
   {
     question_id: questions[6].id,
     style_id: styles[4].id,
-    text: "e. Clean, Sephora",
-    image: "/assets/question_7/urb_clean.jpg"
+    text: "e. Get the new dish that everyone has been talking about",
+    image: nil
   })
 
 # ----------- Question 8/15 -----------
@@ -339,40 +339,40 @@ question_choice_8a = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[0].id,
-    text: "a. Risk-taker, lives life to the edge",
-    image: nil
+    text: "a.Mad et Len, Blackmusk",
+    image: "/assets/question_7/ag_fragrance.jpg"
   })
 
 question_choice_8b = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[1].id,
-    text: "b. Free-spirited",
-    image: nil
+    text: "b. Saje, Goddess Natural Perfume",
+    image: "/assets/question_7/boho_naturalperfume.jpg"
   })
 
 question_choice_8c = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[2].id,
-    text: "c. Well-groomed, sophisticated",
-    image: nil
+    text: "c. Yves Saint Laurent, Black Opium",
+    image: "/assets/question_7/class_blackopium.jpg"
   })
 
 question_choice_8d = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[3].id,
-    text: "d. Vivacious, charismatic, light-hearted",
-    image: nil
+    text: "d. Marc Jacobs, Daisy",
+    image: "/assets/question_7/rom_marcjacobs.jpg"
   })
 
 question_choice_8e = QuestionChoice.create(
   {
     question_id: questions[7].id,
     style_id: styles[4].id,
-    text: "e. Trend-setter, being at the centre of all the action",
-    image: nil
+    text: "e. Clean, Sephora",
+    image: "/assets/question_7/urb_clean.jpg"
   })
 
 # ----------- Question 9/15 -----------
@@ -421,7 +421,7 @@ question_choice_10a = QuestionChoice.create(
   {
     question_id: questions[9].id,
     style_id: styles[0].id,
-    text: "a. Defying convention and norms",
+    text: "a. What is unique to you and not easily found at every store",
     image: nil
   })
 
@@ -429,7 +429,7 @@ question_choice_10b = QuestionChoice.create(
   {
     question_id: questions[9].id,
     style_id: styles[1].id,
-    text: "b. Naturally-sourced, colourful, earthy",
+    text: "b. Whether it's from recycled materials",
     image: nil
   })
 
@@ -437,7 +437,7 @@ question_choice_10c = QuestionChoice.create(
   {
     question_id: questions[9].id,
     style_id: styles[2].id,
-    text: "c. Simplicity, timeless, basics",
+    text: "c. Quality and simplicity",
     image: nil
   })
 
@@ -445,7 +445,7 @@ question_choice_10d = QuestionChoice.create(
   {
     question_id: questions[9].id,
     style_id: styles[3].id,
-    text: "d. Playful, fun, light-hearted",
+    text: "d. How colourful and pleasing it looks",
     image: nil
   })
 
@@ -453,7 +453,7 @@ question_choice_10e = QuestionChoice.create(
   {
     question_id: questions[9].id,
     style_id: styles[4].id,
-    text: "e. Trendy, practical and comfortable",
+    text: "e. How practical it is",
     image: nil
   })
 
@@ -729,7 +729,7 @@ outfit_ag_5= Outfit.create(
 outfit_ag_6= Outfit.create(
   {
     style_id: styles[0].id,
-    image: "/assets/ag_outfits/ag_futuristicblackdress.jpg",
+    image: "/assets/ag_outfits/ag_futuristicdress.jpg",
     text: "Futuristic Black Dress",
     link: "https://www.etsy.com/ca/listing/678293684/futuristic-dress-black-dress-avant-garde?ref=related-2"
   })
