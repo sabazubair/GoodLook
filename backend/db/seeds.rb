@@ -38,8 +38,8 @@ questions = Question.create([
 styles = Style.create([
   {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
   {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
-  {name: "Classic", description: "Your style persona is Classic.", image: "/assets/results/amal_result.jpg"},
-  {name: "Romantic", description: "Your style persona is Romantic.", image: "assets/results/mindyresult1.jpg"},
+  {name: "Classic", description: "You are a planner and value quality over gimmicks. You like the clean and sleek look with no extra designs or patterns. Simple but powerful. You share your style with Amal Clooney.", image: "/assets/results/amal_result.jpg"},
+  {name: "Romantic", description: "You are playful and light-hearted and full of life. You love colour, especially pastel colours and you also love different designs like ruffles, lace, pleats, florals or ribbons. What is life without a dash of personality? You share your style with Mindy Kaling.", image: "assets/results/mindyresult1.jpg"},
   {name: "Urban", description: "Your style persona is Urban.", image: "assets/results/zoe_result1.jpg"}
 ])
 

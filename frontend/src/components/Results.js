@@ -35,7 +35,7 @@ export default class Result extends Component {
           </div>
           <div className="resultText col-6">
             <h2>Your style persona is: {resultName}</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus dictum at tempor commodo ullamcorper. Gravida rutrum quisque non tellus. At risus viverra adipiscing at in. Ultricies mi quis hendrerit dolor. Volutpat odio facilisis mauris sit amet massa vitae. Blandit aliquam etiam erat velit scelerisque. Sed viverra tellus in hac habitasse platea dictumst vestibulum.</p>
+            <p>{resultDescription}</p>
             <Link className="btn btn-info btn-lg" to="/afterquiz/recommendations">Shop the Look</Link>
           </div>
         </div>
