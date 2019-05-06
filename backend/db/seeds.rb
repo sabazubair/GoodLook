@@ -831,6 +831,14 @@ outfit_boho_9 = Outfit.create(
     link: "https://www.threebirdnest.com/collections/dresses/products/hayden-embroidered-mini-dress-cream"
   })
 
+# CLASSIC, STYLE_ID = 2
+outfit_classic_1 = Outfit.create(
+    {
+      style_id: styles[1].id,
+      image: "/assets//",
+      text: "",
+      link: ""
+    })
 
 
 
