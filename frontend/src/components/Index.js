@@ -27,15 +27,7 @@ export default class Index extends Component {
               <div className="row">
                 <div className="welcomeText col-12">
                   <h1>"Style is like personality, it's innate. Fashion is cyclical."</h1>
-                    <p>Want to find your style? Take our quiz to find your style & matched outfits!</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-2">
-                  <p><i className="fas fa-heart fa-3x"></i></p>
-                </div>
-                <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Want to find your style?</p>
                 </div>
               </div>
               <div className="row">
@@ -43,7 +35,15 @@ export default class Index extends Component {
                   <p><i className="far fa-question-circle fa-3x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Take our Quiz to Find your Style</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-2">
+                  <p><i className="fas fa-heart fa-3x"></i></p>
+                </div>
+                <div className="col-10">
+                  <p>Save your favourite looks to your Profile</p>
                 </div>
               </div>
               <div className="row">
@@ -51,7 +51,7 @@ export default class Index extends Component {
                   <p><i className="fas fa-camera-retro fa-3x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Share with your friends!</p>
                 </div>
               </div>
               <div className="indexbutton row">
