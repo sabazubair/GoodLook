@@ -35,6 +35,10 @@
   border-bottom: 1px solid black;
   padding: 20px;
 }
+/* hover is a psuedo-class that you are able to put on any element */
+.questionWrap:hover{
+  cursor: pointer;
+}
 
 .questionWrap img{
   height: 100%;
@@ -72,8 +76,18 @@
   background-color: #F7DFD4;
 }
 
-.footer{
-  background-color: #32485C;
+footer{
+  background-color: #F7EBD7;
+
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer .card{
+  background: none;
+  border: none;
 }
 
 .App {

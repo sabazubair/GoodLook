@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Footer extends Component {
   render () {
     return (
-        <footer className="footer">
+        <footer>
           <div class="card text-center">
             <div class="card-body container">
               <div class="row">
