@@ -1061,17 +1061,6 @@ outfit_urban_9 = Outfit.create(
     })
   
 
-
-
-
-
-
-
-
-
-
-
-
 #USER OUTFITS
 user_outfit2 = UserOutfit.create(
   {
