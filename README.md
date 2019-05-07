@@ -37,7 +37,6 @@ rake db:seed
 ```
 
 3. On two terminal windows, start the servers.
-
 <b>Terminal window for front-end router:</b>
 ```
 npm start
