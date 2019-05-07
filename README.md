@@ -36,11 +36,13 @@ rake db:migrate
 rake db:seed
 ```
 
-3. On two terminal windows, start the servers.<br>
-<b>Terminal window for front-end router</b>
+3. On two terminal windows, start the servers.
+
+<b>Terminal window for front-end router:</b>
 ```
 npm start
-```
+````
+
 Runs the app in the development mode.
 [http://localhost:3001](http://localhost:3001) will open in the browser.
 
