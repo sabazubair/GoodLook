@@ -37,7 +37,7 @@ questions = Question.create([
 #Create the 5 styles for the quiz
 styles = Style.create([
   {name: "Avant-garde", description: "Your style persona is Avant-garde. You share your style with Janelle Monae.", image: "/assets/results/ag_0_result.jpg"},
-  {name: "Bohemian", description: "Your style persona is Bohemian.", image: "/assets/results/boho_1_result.jpeg"},
+  {name: "Bohemian", description: "Your style is Bohemian! You lean to a more relaxed, lived-in, funky kinda flow, arm candy is a must and you like a lot of it. Denim, shade, and velvet will be paired in just the right way that creates a style that works for you and others love it.You love natural fabrics and earth tones The 1960s and the early 1970s is your claim to style in an effortless way. You share your style with Vanessa Hudgens..", image: "/assets/results/boho_1_result.jpeg"},
   {name: "Classic", description: "Your style persona is Classic.", image: "/assets/results/amal_result.jpg"},
   {name: "Romantic", description: "Your style persona is Romantic.", image: "assets/results/mindyresult1.jpg"},
   {name: "Urban", description: "Your style persona is Urban.", image: "assets/results/zoe_result1.jpg"}
