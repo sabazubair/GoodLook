@@ -25,11 +25,10 @@ sudo apt install npm
 
 ### Setup
 
-1. Install the dependencies for front-end and back-end.
-<br>
+1. Install the dependencies for front-end and back-end.<br>
 In frontend folder:
 ```npm install```
-<br>
+
 In backend folder:
 ```bundle install```
 
