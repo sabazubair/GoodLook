@@ -5,7 +5,7 @@ Good Look is a React-based fashion app that allows women to discover their perso
 
 ## Screenshots
 
-### Prerequisites
+## Prerequisites
 
 - NODEJS (v8.10.0)
 
@@ -23,7 +23,7 @@ sudo apt install npm
 
 ```
 
-### Setup
+## Setup
 
 1. Install the dependencies for front-end and back-end.<br>
 In frontend folder: `npm install`
