@@ -36,7 +36,7 @@ rake db:migrate
 rake db:seed
 ```
 
-3. On two terminal windows, start the servers.
+3. On two terminal windows, start the servers.<br>
 <b>Terminal window for front-end router</b>
 ```
 npm start
