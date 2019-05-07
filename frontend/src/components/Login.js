@@ -5,12 +5,12 @@ export default class Login extends Component {
   render () {
     return (
     <div>
-    <h1>Footer</h1>
-    <Link to= "/about" >About</Link>
-    <Link to= "/login" >Sign In</Link>
-    <Link to= "/meettheteam" >Meet The Team</Link>
-
-
+      <h1>Login</h1>
+      <form>
+      Email: <input type="text" name="email"/>
+      Password: <input type="text" name="password"/>
+      <button type="submit">Submit</button>
+      </form>
     </div>
     )
     }

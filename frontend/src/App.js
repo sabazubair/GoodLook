@@ -1,9 +1,9 @@
 import './App.css';
 import React, {Component} from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Quiz from "./components/Quiz";
+import Quiz from "./components/Quiz/Quiz";
 import Index from "./components/Index";
-import Result from "./components/Results";
+import Result from "./components/Quiz/Results";
 import Login from "./components/Login";
 import About from "./components/About";
 import MeettheTeam from "./components/Meettheteam";
