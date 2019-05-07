@@ -772,7 +772,7 @@ outfit_boho_1 = Outfit.create(
 outfit_boho_2 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_tiedye",
+    image: "/assets/boho_outfits/boho_tiedye.jpg",
     text: "Tie Dye Maxi Dress",
     link: "https://www.threebirdnest.com/collections/dresses/products/estella-tie-dye-plunge-maxi-dress-mocha"
   })
@@ -780,7 +780,7 @@ outfit_boho_2 = Outfit.create(
 outfit_boho_3 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_floraljumpsuit",
+    image: "/assets/boho_outfits/boho_floraljumpsuit.jpg",
     text: "Floral Jumpsuit",
     link: "https://www.threebirdnest.com/collections/dresses/products/montana-floral-print-jumpsuit-mustard"
   })
@@ -812,7 +812,7 @@ outfit_boho_6 = Outfit.create(
 outfit_boho_7 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_maxishirt.jpg",
+    image: "/assets/boho_outfits/boho_maxiskirt.jpg",
     text: "Floral Maxi Skirt",
     link: "https://www.threebirdnest.com/collections/whats-new/products/seville-maxi-skirt-floral"
   })
@@ -828,7 +828,7 @@ outfit_boho_8 = Outfit.create(
 outfit_boho_9 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_whiteminidress.jpg",
+    image: "/assets/boho_outfits/boho_whiteminidress.jpeg",
     text: "White Mini Dress",
     link: "https://www.threebirdnest.com/collections/dresses/products/hayden-embroidered-mini-dress-cream"
   })
@@ -912,7 +912,7 @@ outfit_classic_9 = Outfit.create(
 outfit_romantic_1 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_palebluedress.jpg",
+    image: "/assets/rom_outfits/rom_palebluedress.jpeg",
     text: "Pale Blue Dress",
     link: "https://shop.nordstrom.com/s/ted-baker-london-meline-side-bow-detail-dress/5213188?origin=coordinating-5213188-0-2-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194339"
    })
@@ -920,7 +920,7 @@ outfit_romantic_1 = Outfit.create(
 outfit_romantic_2 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_knitdress.jpg",
+    image: "/assets/rom_outfits/rom_knitdress.jpeg",
     text: "Knit Dress",
     link: "https://shop.nordstrom.com/s/ted-baker-london-vellia-flippy-knit-skater-dress/5194339?origin=coordinating-5194339-0-4-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194340"
   })
@@ -928,7 +928,7 @@ outfit_romantic_2 = Outfit.create(
 outfit_romantic_3 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_skaterdress.jpg",
+    image: "/assets/rom_outfits/rom_skaterdress.jpeg",
     text: "Skater Dress",
     link: "https://shop.nordstrom.com/s/ted-baker-london-chestna-oracle-skater-dress/5213185?origin=coordinating-5213185-0-2-PDP_1-recbot-also_viewed&recs_placement=PDP_1&recs_strategy=also_viewed&recs_source=recbot&recs_page_type=product&recs_seed=5194340"
   })
@@ -936,7 +936,7 @@ outfit_romantic_3 = Outfit.create(
 outfit_romantic_4 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_lacetop.jpg",
+    image: "/assets/rom_outfits/rom_lacetop.jpeg",
     text: "Lace Top",
     link: "https://shop.nordstrom.com/s/free-people-daniella-lace-top/4826512?origin=category-personalizedsort&fashioncolor=BLUE"
   })
@@ -944,7 +944,7 @@ outfit_romantic_4 = Outfit.create(
 outfit_romantic_5 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_offtheshoulder.jpeg",
+    image: "/assets/rom_outfits/rom_offtheshoulderdress.jpeg",
     text: "Off The Shoulder Dress",
     link: "https://shop.nordstrom.com/s/eliza-j-off-the-shoulder-ruffle-sheath-dress-regular-petite/4566687?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=blue"
   })
@@ -952,7 +952,7 @@ outfit_romantic_5 = Outfit.create(
 outfit_romantic_6 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_flaredress.jpg",
+    image: "/assets/rom_outfits/rom_flaredress.jpeg",
     text: "Flare Dress",
     link: "https://shop.nordstrom.com/s/ieena-for-mac-duggal-double-v-neck-fit-flare-party-dress/5161414?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=black"
   })
@@ -960,7 +960,7 @@ outfit_romantic_6 = Outfit.create(
 outfit_romantic_7 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_highlowdress.jpg",
+    image: "/assets/rom_outfits/rom_highlowdress.jpeg",
     text: "High Low Dress",
     link: "https://shop.nordstrom.com/s/xscape-high-low-dress/4572231?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=black"
   })
@@ -968,7 +968,7 @@ outfit_romantic_7 = Outfit.create(
 outfit_romantic_8 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_ruffledress.jpg",
+    image: "/assets/rom_outfits/rom_ruffledress.jpeg",
     text: "Ruffle Dress",
     link: "https://shop.nordstrom.com/s/wayf-chelsea-tiered-ruffle-maxi-dress-regular-plus/4926277?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=lilac%20blossom%20floral"
   })
@@ -976,15 +976,7 @@ outfit_romantic_8 = Outfit.create(
 outfit_romantic_9 = Outfit.create(
   {
     style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_lacedress.jpg",
-    text: "Lace Midi Dress",
-    link: "https://shop.nordstrom.com/s/astr-the-label-lace-midi-dress/4565648?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=aqua"
-  })
-
-outfit_romantic_9 = Outfit.create(
-  {
-    style_id: styles[3].id,
-    image: "/assets/rom_outfits/rom_lacedress.jpg",
+    image: "/assets/rom_outfits/rom_lacedress.jpeg",
     text: "Lace Midi Dress",
     link: "https://shop.nordstrom.com/s/astr-the-label-lace-midi-dress/4565648?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=aqua"
   })
@@ -1033,7 +1025,7 @@ outfit_urban_5 = Outfit.create(
 outfit_urban_6 = Outfit.create(
     {
       style_id: styles[4].id,
-      image: "/assets/urban_outfits/urban_dickiestop.jpg",
+      image: "/assets/urban_outfits/urban_dickiestop.png",
       text: "Dickies Boyfriend Shirt",
       link: "https://www.asos.com/dickies/dickies-boyfriend-t-shirt-with-front-logo/prd/7965170?clr=bk-black&colourWayId=15365322&SearchQuery=&cid=25647&gridcolumn=2&gridrow=10&gridsize=4&pge=1&pgesize=72&totalstyles=243"
     })
@@ -1041,7 +1033,7 @@ outfit_urban_6 = Outfit.create(
 outfit_urban_7 = Outfit.create(
   {
     style_id: styles[4].id,
-    image: "/assets/urban_outfits/urban_sportsjacket.jpg",
+    image: "/assets/urban_outfits/urban_sportsjacket.jpeg",
     text: "Denim Jacket",
     link: "https://www.urbanoutfitters.com/en-ca/shop/lacoste-allover-print-denim-bomber-jacket?category=womens-clothing&color=092"
   })
@@ -1049,7 +1041,7 @@ outfit_urban_7 = Outfit.create(
 outfit_urban_8 = Outfit.create(
   {
     style_id: styles[4].id,
-    image: "/assets/urban_outfits/urban_widelegpants.jpg",
+    image: "/assets/urban_outfits/urban_widelegpants.jpeg",
     text: "Wide Leg pants",
     link: "https://shop.lululemon.com/p/women-pants/On-The-Fly-Pant-Wide-Leg-31/_/prod8980322?color=34201"
   })
@@ -1057,7 +1049,7 @@ outfit_urban_8 = Outfit.create(
 outfit_urban_9 = Outfit.create(
     {
       style_id: styles[4].id,
-      image: "/assets/urban_outfits/urban_beltbag.jpg",
+      image: "/assets/urban_outfits/urban_beltbag.jpeg",
       text: "Leather Belt Bag",
       link: "https://www.urbanoutfitters.com/en-ca/shop/adidas-originals-faux-leather-belt-bag?category=womens-clothing&color=001"
     })
