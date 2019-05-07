@@ -26,9 +26,10 @@ sudo apt install npm
 ### Setup
 
 1. Install the dependencies for front-end and back-end.
+<br>
 In frontend folder:
 ```npm install```
-
+<br>
 In backend folder:
 ```bundle install```
 
@@ -40,20 +41,20 @@ rake db:seed
 ```
 
 3. On two terminal windows, start the servers.
+<br>
 <b>Terminal window for front-end router</b>
 ```
 npm start
 ```
-Runs the app in the development mode.<br>
-[http://localhost:3001](http://localhost:3001) will open in the browser.
+Runs the app in the development mode. [http://localhost:3001](http://localhost:3001) will open in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The page will reload if you make edits. You will also see any lint errors in the console.
 
 <b>Terminal window for back-end server</b>
 ```
 bin/rails s
 ```
+Server will run at localhost:3000.
 
 ## Dependencies
 * React
@@ -66,10 +67,11 @@ bin/rails s
 * Bcrypt
 
 ## Upcoming Features
-* allowing creation of user accounts
-* mens' style quiz and outfits
-* prices of items
-* getting outfits based on budget
+* User account creation
+* Mens' style quiz and recommendations
+* Prices of clothing items
+* Recommendations based on your budget
+* Recommendations based on the season or the event user is attending
 
 ## Known Issues
 *
