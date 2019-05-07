@@ -1,5 +1,8 @@
 # Final Project 'GoodLook'
 
+Good Look is a React-based fashion app that allows women to discover their personal style. Based on the results of a simple quiz, the app will recommend outfits to inspire and educate users.
+
+
 ## Screenshots
 
 ### Prerequisites
