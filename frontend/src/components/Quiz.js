@@ -102,8 +102,16 @@ export default class Quiz extends Component {
     } else {
       componentToDisplay =
           <div className="container">
-            <h1 className="quiz-title">Style Persona Quiz</h1>
-            <Card style={{ width:'25rem', margin:'2em auto' }}>
+            <div className="row quiz-header-wrap">
+              <div className="col-10">
+                <h1 className="quiz-title">Style Persona Quiz</h1>
+              </div>
+              <div className="col-2">
+                <p className="counter">{this.state.activeQuestion + 1} / 15</p>
+              </div>
+              </div>
+
+            <div>
               {this.state.questions.map((item, idx) => {
             display = this.state.activeQuestion === idx;
             return <Question
@@ -115,7 +123,7 @@ export default class Quiz extends Component {
               nextQuestion={this.nextQuestion}
             />
           })}
-        </Card>
+        </div>
       </div>
     }
 

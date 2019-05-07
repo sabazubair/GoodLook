@@ -30,10 +30,20 @@
 }
 
 /* Quiz */
+.counter{
+  font-size: 25px;
+  margin: 32px;
+  text-align: center;
+}
+
+.quiz-header-wrap{
+  border-bottom: 1px solid black;
+}
+
 .quiz-title {
   text-align: center;
-  border-bottom: 1px solid black;
-  padding: 20px;
+  margin-top: 25px;
+
 }
 /* hover is a psuedo-class that you are able to put on any element */
 .questionWrap:hover{
@@ -41,8 +51,8 @@
 }
 
 .questionWrap img{
-  height: 100%;
-  width: 50%;
+  height: 400px;
+  width: 100%;
 }
 
 /* Find my style button */
