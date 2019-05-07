@@ -51,7 +51,7 @@ question_choice_1a = QuestionChoice.create(
     question_id: questions[0].id,
     style_id: styles[0].id,
     text: "a. Janelle Monae",
-    image: "/assets/question_1/q1_janellemonae.jpg"
+    image: "/assets/question_1/janelleMonae.jpg"
   })
 
 question_choice_1b = QuestionChoice.create(
