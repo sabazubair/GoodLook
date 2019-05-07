@@ -10,10 +10,11 @@ class Choice extends Component {
   }
 
   render() {
+    const img = this.props.choice.image ? <img src={this.props.choice.image}/> : null;
     return (
       <div className="questionWrap col-4" onClick={this.Next}>
-        <img src={this.props.choice.image}/>
-        <h3>{this.props.choice.text}</h3>
+        {this.props.choice.text}
+        {img}
         </div>
     );
   }

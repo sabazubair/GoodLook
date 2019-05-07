@@ -18,7 +18,6 @@ export default class FindMyStyle extends Component {
               {this.props.question.choices.map((choice, index) => {
                 return (<ListGroup.Item className="questionWrap d-flex flex-row justify-content-between">
                   {choice.text}
-                  <img style={{width:'40%'}}src={choice.image}/>
                 </ListGroup.Item>)
               })}
             </ListGroup>
