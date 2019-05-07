@@ -13,23 +13,23 @@ import AfterQuiz from "./components/AfterQuiz/AfterQuiz";
 import Footer from "./components/Footer";
 
 export default class AppRouter extends Component {
-render (){
-return (
-  <div>
-    <Router>
-      <NavBar />
-        <Route path="/" exact component={Index} />
-        <Route path="/quiz" component={Quiz} />
-        <Route path="/login" component={Login} />
-        <Route path="/about" component={About}/>
-        <Route path="/meettheteam" component={MeettheTeam}/>
-        <Route path="/signup" component={Signup}/>
-        <Route path="/result" component={Result}/>
-        <Route path="/afterquiz" component={AfterQuiz}/>
-      <Footer />
-    </Router>
-  </div>
-  );
-}
+  render() {
+    return (
+      <div>
+        <Router>
+          <NavBar />
+            <Route path="/" exact component={Index} />
+            <Route path="/quiz" component={Quiz} />
+            <Route path="/login" component={Login} />
+            <Route path="/about" component={About}/>
+            <Route path="/meettheteam" component={MeettheTeam}/>
+            <Route path="/signup" component={Signup}/>
+            <Route path="/result" component={Result}/>
+            <Route path="/afterquiz" component={AfterQuiz}/>
+          <Footer />
+        </Router>
+      </div>
+    );
+  }
 
 }
