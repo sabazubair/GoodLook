@@ -10,7 +10,7 @@ export default class Quiz extends Component {
   constructor() {
     super();
     this.state = {
-      user: null,
+      user_id: null,
       questions: [],
       activeQuestion:0,
       resultLog: []
@@ -20,15 +20,15 @@ export default class Quiz extends Component {
   componentDidMount() {
     axios("/api/v1/quiz")
     .then(response => {
-      console.log(response.data);
-      this.setState({questions:response.data})
+      this.setState({questions:response.data});
+      console.log(this.state.questions);
     })
     .catch(error => console.log(error));
 
     axios("/api/v1/user")
     .then(response => {
-      console.log(response.data);
-      this.setState({user:response.data})
+      this.setState({user_id:response.data});
+      console.log("user_id: ", this.state.user_id);
     })
     .catch(error => console.log(error))
   }
@@ -70,7 +70,7 @@ export default class Quiz extends Component {
 
   sendStyleId = (id) => {
     let body = {
-      user_id: this.state.user.id,
+      user_id: this.state.user_id,
       style_id: id
     };
 
