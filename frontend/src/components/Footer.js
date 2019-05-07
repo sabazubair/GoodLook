@@ -5,20 +5,20 @@ export default class Footer extends Component {
   render () {
     return (
         <footer>
-          <div class="card text-center">
-            <div class="card-body container">
-              <div class="row">
-                <div class="col-4">
+          <div className="card text-center">
+            <div className="card-body container">
+              <div className="row">
+                <div className="col-4">
                   <ul>
                     <li>Help</li>
                     <li>FAQ</li>
                     <li>About Us</li>
                   </ul>
                 </div>
-                <div class="col-4">
-                  <ul>
-                    <li>Fashion Footprint</li>
-                    <li>Careers & Opportunities</li>
+                  <div class="col-4">
+                    <ul>
+                      <li>Fashion Footprint</li>
+                      <li>Careers & Opportunities</li>
                   </ul>
                 </div>
                 <div class="col-4">
