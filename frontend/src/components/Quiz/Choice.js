@@ -15,7 +15,7 @@ class Choice extends Component {
       <div className="questionWrap col-4" onClick={this.Next}>
         {this.props.choice.text}
         {img}
-        </div>
+      </div>
     );
   }
 }

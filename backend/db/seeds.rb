@@ -86,15 +86,13 @@ question_choice_1e = QuestionChoice.create(
     image: "/assets/question_1/q1_zk4.jpg"
   })
 
-
-
 # ----------- Question 2/15 -----------
 question_choice_2a = QuestionChoice.create(
   {
     question_id: questions[1].id,
     style_id: styles[0].id,
     text: nil,
-    image: "/assets/question_2/avantgarde_room.jpg"
+    image: "/assets/question_2/avantgardeRoom2.jpg"
   })
 
 question_choice_2b = QuestionChoice.create(
@@ -110,7 +108,7 @@ question_choice_2c = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[2].id,
     text: nil,
-    image: "/assets/question_2/classic_room.jpg"
+    image: "/assets/question_2/classicRoom.jpg"
   })
 
 question_choice_2d = QuestionChoice.create(
@@ -118,7 +116,7 @@ question_choice_2d = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[3].id,
     text: nil,
-    image: "/assets/question_2/romantic_room1.jpg"
+    image: "/assets/question_2/romRoom2.jpg"
   })
 
 question_choice_2e = QuestionChoice.create(
@@ -126,7 +124,7 @@ question_choice_2e = QuestionChoice.create(
     question_id: questions[1].id,
     style_id: styles[4].id,
     text: nil,
-    image: "/assets/question_2/urban_room2.jpg"
+    image: "/assets/question_2/urbanloft.jpg"
   })
 
 # ----------- Question 3/15 -----------
