@@ -20,8 +20,8 @@ export default class Quiz extends Component {
   componentDidMount() {
     axios("/api/v1/quiz")
     .then(response => {
+      console.log(response);
       this.setState({questions:response.data});
-      console.log(this.state.questions);
     })
     .catch(error => console.log(error));
 
