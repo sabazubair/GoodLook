@@ -1,23 +1,14 @@
-import React, {Component} from 'react';
-import { Link } from "react-router-dom";
-import { Redirect } from 'react-router-dom';
+import React from 'react';
 
-export default class SingleRecommendation extends Component {
-  redirectToLink = () => {
-    return <Redirect to= {this.props.outfit.link}/>
-  }
-
-  render() {
-    return (
-      <div>
-        <img id={this.props.outfit.id} style={{width:'20%'}} src={this.props.outfit.image} />
-        <i className="fas fa-heart" outfit={this.props.outfit} id={this.props.outfit.id} style={{color: this.props.outfit.selected ? 'red' : 'black'}} onClick={this.props.handleClick}></i>
-        <p>{this.props.outfit.text}</p>
-        <button onClick={this.redirectToLink}>Shop this look</button>
-      </div>
-    )
-  }
-
+export default ({outfit, handleClick}) => {
+ return (
+   <div>
+     <img id={outfit.id} style={{width:'20%'}} src={outfit.image} />
+     <i className="fas fa-heart" outfit={outfit} id={outfit.id} style={{color: outfit.selected ? 'red' : 'black'}} onClick={handleClick}></i>
+     <p>{outfit.text}</p>
+     <button><a style={{color: "black"}} href={outfit.link}>Shop this look</a></button>
+   </div>
+ )
 }
 
 
