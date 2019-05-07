@@ -27,6 +27,15 @@
 /* MEET THE TEAM - Staff Images*/
 .rounded-circle{
   width: 10rem;
+  align: center;
+}
+
+.meettheteam {
+  background-color: #F7DFD4;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
 }
 
 /* Quiz */
@@ -78,13 +87,7 @@
   background-color: #32485C;
 }
 
-.jumbotron {
-  background-color: #EABCAC;
-}
 
-.meettheteam {
-  background-color: #F7DFD4;
-}
 
 footer{
   background-color: #F7EBD7;
