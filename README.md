@@ -71,5 +71,5 @@ Server will run at localhost:3000.
 * Recommendations based on the season or the event user is attending
 
 ## Known Issues
-*login and footer is deadlink
-*name is hardcoded in the navbar (under the assumption that someone is logged in already)
+* login and footer is deadlink
+* name is hardcoded in the navbar (under the assumption that someone is logged in already)
