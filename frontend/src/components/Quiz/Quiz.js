@@ -127,7 +127,7 @@ export default class Quiz extends Component {
     }
 
     return (
-      <div>
+      <div className="found-it">
         {componentToDisplay}
       </div>
     )

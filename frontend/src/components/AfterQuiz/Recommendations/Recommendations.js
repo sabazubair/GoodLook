@@ -86,8 +86,7 @@ export default class Recommendations extends Component {
 
   render() {
     return (
-
-      <div className="container">
+      <div className="found-it container">
         <div className="row">
           {this.state.outfits.map((outfit, id) => <SingleRecommendation key={id} outfit={outfit} handleClick={this.onClick}/>)}
         </div>

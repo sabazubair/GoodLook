@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default class NavBar extends Component {
   render () {
     return (
-      <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/">GOOD LOOK</Link>
           <div className="collapse navbar-collapse" id="navbarText">
@@ -22,7 +21,6 @@ export default class NavBar extends Component {
             <span className="navbar-text">Welcome Back, Amita!</span>
           </div>
         </nav>
-      </div>
     )
   }
 }

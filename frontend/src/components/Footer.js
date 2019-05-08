@@ -5,34 +5,20 @@ export default class Footer extends Component {
   render () {
     return (
         <footer>
-          <div className="card text-center">
-            <div className="card-body container">
+            <div className="container-fluid">
               <div className="row">
-                <div className="col-4">
+                <div className="footer-link col-6">
                   <ul>
-                    <li>Help</li>
-                    <li>FAQ</li>
-                    <li>About Us</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/meettheteam">Meet the Team</Link></li>
                   </ul>
                 </div>
-                  <div class="col-4">
-                    <ul>
-                      <li>Fashion Footprint</li>
-                      <li>Careers & Opportunities</li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                  <ul>
-                    <li>Privacy Policy</li>
-                    <li>Cookie Policy</li>
-                  </ul>
+                <div className="footer-sig col-6">
+                  Made with <i className="fas fa-heart"></i> at Lighthouse Labs
                 </div>
               </div>
             </div>
-            <div class="card-footer text-muted">
-              Made with <i class="fas fa-heart"></i> at Lighthouse Labs
-            </div>
-          </div>
         </footer>
     )
     }
