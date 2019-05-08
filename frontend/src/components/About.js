@@ -4,10 +4,11 @@ export default class About extends Component {
   render(){
     return (
       <div className="about">
-        <div className="jumbotron">
           <h1>Why Goodlook?</h1>
-          <p></p>
-        </div>
+          <br/>
+          <p>Goodlook was founded on a mission to educate and help the average person find their style and learn more about what clothes reflect their personality.</p>
+          <p> The founders Saba, Sarah and Maliha all shared a common problem: finding outfits that suited them. Many times, as trends came and went, they found themselves having clothes they never wore. When it came time for events, they would spend hours figuring out the right outfit. Fed up with the continuous loss of time, they sought to create a tool.</p>
+          <p>Based on the results of a simple quiz, Goodlook connects insights of a user's style persona with a variety of recommended outfits for users to save to their virtual wardrobe.</p>
       </div>
     );
   }

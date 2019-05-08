@@ -20,8 +20,11 @@
 
 /* ABOUT PAGE */
 .about{
-  margin: 30px;
-  background-color: #E2B091;
+  padding: 2rem 25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7DFD4;
 }
 
 /* MEET THE TEAM - Staff Images*/
@@ -184,6 +187,7 @@ footer .card{
 .account {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .details {

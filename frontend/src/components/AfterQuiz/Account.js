@@ -5,7 +5,7 @@ export default class Account extends Component {
     return (
       <div>
         <h1 className="quiz-title">Account</h1>
-        <div style={{backgroundColor:"white"}} className="jumbotron account">
+        <div className="jumbotron account">
           <img height={200} width={275} src="https://compote.slate.com/images/9a824e6f-c28f-4eca-9606-7c6e2e3ac95b.jpg"/>
           <div className="details">
           <form>
