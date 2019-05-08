@@ -24,32 +24,32 @@ export default class Index extends Component {
             <div className="icons col-xl-4 col-lg-4 col-md-6 col-sm-12">
               <div className="row">
                 <div className="welcomeText col-12">
-                  <h1>"Style is like personality, it's innate. Fashion is cyclical."</h1>
-                    <p>Want to find your style? Take our quiz to find your style & matched outfits!</p>
+                  <h1><i>"Style is like personality, it's innate. Fashion is cyclical."</i></h1>
+                    <p>3 Easy Steps to Find Your Style:</p>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2">
-                  <p><i className="fas fa-heart fa-3x"></i></p>
+                  <p><i className="far fa-question-circle fa-2x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>1. Take our Quiz</p>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2">
-                  <p><i className="far fa-question-circle fa-3x"></i></p>
+                  <p><i className="fas fa-cogs fa-2x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>2. Get Curated Looks</p>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2">
-                  <p><i className="fas fa-camera-retro fa-3x"></i></p>
+                  <p><i className="fas fa-heart fa-2x"></i></p>
                 </div>
                 <div className="col-10">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>3. Save your Fave Looks</p>
                 </div>
               </div>
               <div className="indexbutton row">

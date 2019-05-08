@@ -10,15 +10,16 @@ export default class Question extends Component {
     if (this.props.display) {
       // Don't hard code ids, add lastQuestion to question
       return (
-        <div>
-          <Card.Header>
+      <div>
+        <div className="row">
+          <div className="active-question col-12">
             <h5>{this.props.question.text}</h5>
-            <p style={{backgroundColor:"pink"}}>{this.props.activeQuestion + 1} / 15</p>
-          </Card.Header>
+          </div>
+        </div>
           <ChoicesList
           choices={this.props.question.choices}
           nextQuestion={this.props.nextQuestion} />
-        </div>
+      </div>
       );
     } else {
       return null;

@@ -10,12 +10,14 @@ class Choice extends Component {
   }
 
   render() {
-    const img = this.props.choice.image ? <img src={this.props.choice.image}/> : null;
+    const styles = this.props.choice.image ? "questionWrap col-4" : "questionWrap col-4 textOnly"
     return (
-      <ListGroup.Item className="questionWrap d-flex flex-row justify-content-between" onClick={this.Next}>
-        {this.props.choice.text}
-        {img}
-      </ListGroup.Item>
+      <div className={styles} onClick={this.Next}>
+        <div className='questionInner'>
+        <p>{this.props.choice.text}</p>
+        {this.props.choice.image && <img src={this.props.choice.image} />}
+        </div>
+      </div>
     );
   }
 }
