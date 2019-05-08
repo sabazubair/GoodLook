@@ -54,22 +54,23 @@ bin/rails s
 Server will run at localhost:3000.
 
 ## Dependencies
-* React
+* React 
 * React Router
-* ReactDom
-* Bootstrap
-* Rails 5.1
+* ReactDom 
+* Bootstrap 
+* Rails 5.1 
 * postgreSQL
-* Axios
+* Axios 
 * Bcrypt
 
 ## Upcoming Features
-* User account creation
-* Mens' style quiz and recommendations
-* Prices of clothing items
-* Recommendations based on your budget
-* Recommendations based on the season or the event user is attending
-
+* User login
+* Sharing Wardrobe with friends
+* Men style quiz
+* Identifying and pricing each article of clothing
+* Output outfits based on users budget 
+* Show outfits depending on season
+ 
 ## Known Issues
-* Login and footer is deadlink
+* Login and footer is a deadlink.
 * Name is hardcoded in the Navbar (under the assumption that someone is logged in already)
