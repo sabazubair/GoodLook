@@ -19,20 +19,24 @@ export default class FindMyStyle extends Component {
           </div>
 
           <div className="row">
-            <div className="col-12">
+            <div className="active-question col-12">
               <h5>{this.props.question.text}</h5>
             </div>
           </div>
 
           <div className="row">
             {this.props.question.choices.map((choice, index) => {
-              const img = choice.image ? <img src={choice.image} /> : null;
+              const styles = choice.image ? "questionWrap col-4" : "questionWrap col-4 textOnly"
               return (
-                <div className="questionWrap col-4" onClick={this.Next}>
-                  {choice.text}
-                  {img}
+
+                <div className={styles} onClick={this.Next}>
+                  <div className='questionInner'>
+                    <p>{choice.text}</p>
+                    {choice.image && <img src={choice.image} />}
+                  </div>
                 </div>
-              )})
+              );
+            })
             }
           </div>
 

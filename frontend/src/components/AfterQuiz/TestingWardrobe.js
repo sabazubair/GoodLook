@@ -53,16 +53,29 @@ export default class TestingWardrobe extends Component {
     }
 
     const test = this.state.outfits.map(outfit => {
-          return (<div>
-          <img id={outfit.outfit.id} style={{width:'20%'}} src={outfit.outfit.image} />
-          <i className="fas fa-trash-alt" saved_id={outfit.id} onClick={this.deleteLook}></i>
-          </div>)
+          return (
+            <div className="wardrobe-single col-4">
+              <div className="wardrobe-inner">
+                <img id={outfit.outfit.id} src={outfit.outfit.image} />
+                <div className="row">
+                  <div className="col-1">
+                    <i className="fas fa-trash-alt" saved_id={outfit.id} onClick={this.deleteLook}></i>
+                  </div>
+                  <div className="col-6">{outfit.outfit.text}</div>
+                    <div className="col-5">
+                      <button><a style={{ color: "black" }} target='_blank' href={outfit.outfit.link}>Shop this look</a></button>
+                    </div>
+                </div>
+              </div>
+            </div>)
     })
     return (
-        <ListGroup.Item>
+      <div className="container">
+        <div className="row">
           {warning}
           {test}
-        </ListGroup.Item>
+        </div>
+      </div>
     )
   }
 }

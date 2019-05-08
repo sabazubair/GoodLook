@@ -86,9 +86,12 @@ export default class Recommendations extends Component {
 
   render() {
     return (
-        <ListGroup.Item>
+
+      <div className="container">
+        <div className="row">
           {this.state.outfits.map((outfit, id) => <SingleRecommendation key={id} outfit={outfit} handleClick={this.onClick}/>)}
-        </ListGroup.Item>
+        </div>
+      </div>
     )
   }
 }

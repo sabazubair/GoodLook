@@ -19,7 +19,7 @@ export default class Footer extends Component {
                     <ul>
                       <li>Fashion Footprint</li>
                       <li>Careers & Opportunities</li>
-                  </ul>
+                    </ul>
                 </div>
                 <div class="col-4">
                   <ul>
