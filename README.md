@@ -23,6 +23,12 @@ sudo apt install npm
 
 ```
 
+- POSTGRESQL ()
+
+```
+brew install postgresql
+
+
 ## Setup
 
 1. Install the dependencies for front-end and back-end.<br>
@@ -70,7 +76,7 @@ Server will run at localhost:3000.
 * Identifying and pricing each article of clothing
 * Output outfits based on users budget 
 * Show outfits depending on season
- 
+
 ## Known Issues
 * Login and footer is a deadlink.
 * Name is hardcoded in the Navbar (under the assumption that someone is logged in already)
