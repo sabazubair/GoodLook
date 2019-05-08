@@ -255,16 +255,16 @@ question_choice_6a = QuestionChoice.create(
   {
     question_id: questions[5].id,
     style_id: styles[0].id,
-    text: "a. Oslo, Norway",
-    image: "/assets/question_6/ag_oslonorway.jpg"
+    text: "a. Alta, Norway",
+    image: "/assets/question_6/alta-norway.jpg"
   })
 
 question_choice_6b = QuestionChoice.create(
   {
     question_id: questions[5].id,
     style_id: styles[1].id,
-    text: "b. Oaxaca, Mexico",
-    image: "/assets/question_6/boho_mexico.jpg"
+    text: "b. Guanajuato, Mexico",
+    image: "/assets/question_6/GMexico.jpg"
   })
 
 question_choice_6c = QuestionChoice.create(
@@ -272,7 +272,7 @@ question_choice_6c = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[2].id,
     text: "c. London, England",
-    image: "/assets/question_6/class_londoneng.jpg"
+    image: "/assets/question_6/londonEngland.jpg"
   })
 
 question_choice_6d = QuestionChoice.create(
@@ -288,7 +288,7 @@ question_choice_6e = QuestionChoice.create(
     question_id: questions[5].id,
     style_id: styles[4].id,
     text: "e. New York, USA",
-    image: "/assets/question_6/newyork_cabs.jpg"
+    image: "/assets/question_6/newyork.jpeg"
   })
 
 # ----------- Question 7/15 -----------
@@ -778,9 +778,9 @@ outfit_boho_2 = Outfit.create(
 outfit_boho_3 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_floraljumpsuit.jpg",
-    text: "Floral Jumpsuit",
-    link: "https://www.threebirdnest.com/collections/dresses/products/montana-floral-print-jumpsuit-mustard"
+    image: "/assets/boho_outfits/mysticRiverFloral.jpg",
+    text: "Mystic River Floral",
+    link: "https://www.threebirdnest.com/collections/dresses/products/mystic-river-floral-maxi-dress-cream"
   })
 
 outfit_boho_4 = Outfit.create(
@@ -810,9 +810,9 @@ outfit_boho_6 = Outfit.create(
 outfit_boho_7 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_maxiskirt.jpg",
-    text: "Floral Maxi Skirt",
-    link: "https://www.threebirdnest.com/collections/whats-new/products/seville-maxi-skirt-floral"
+    image: "/assets/boho_outfits/tropicalHeatWrap.jpg",
+    text: "Tropical Heat Wrap Ruffle Maxi Dress",
+    link: "https://www.threebirdnest.com/collections/dresses/products/tropical-heat-wrap-ruffle-maxi-dress-lavender"
   })
 
 outfit_boho_8 = Outfit.create(
