@@ -23,10 +23,12 @@ sudo apt install npm
 
 ```
 
-- POSTGRESQL ()
+- POSTGRESQL
 
 ```
 brew install postgresql
+
+
 
 
 ## Setup
