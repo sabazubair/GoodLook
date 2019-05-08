@@ -20,11 +20,12 @@
 
 /* ABOUT PAGE */
 .about{
-  padding: 2rem 25rem;
+  padding: 2rem 25rem 80px 25rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: #F7DFD4;
+
 }
 
 /* MEET THE TEAM - Staff Images*/
@@ -130,6 +131,11 @@
   padding: 1px;
   color: white;
   background-color: #E2B091;
+}
+
+.after-quiz-nav .btn-primary{
+  background-color: #874E4C;
+  border: none;
 }
 
 .resultText{
