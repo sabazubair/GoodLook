@@ -215,7 +215,7 @@ question_choice_5a = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[0].id,
     text: nil,
-    image: "/assets/question_5/politicalart_ag.jpg"
+    image: "/assets/question_5/banksy1.jpeg"
   })
 
 question_choice_5b = QuestionChoice.create(
@@ -223,7 +223,7 @@ question_choice_5b = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[1].id,
     text: nil,
-    image: "/assets/question_5/elephantart_boho.jpg"
+    image: "/assets/question_5/bohoartwork1.jpeg"
   })
 
 question_choice_5c = QuestionChoice.create(
@@ -231,7 +231,7 @@ question_choice_5c = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[2].id,
     text: nil,
-    image: "/assets/question_5/classicartwork.jpg"
+    image: "/assets/question_5/classicArtwork.jpeg"
   })
 
 question_choice_5d = QuestionChoice.create(
@@ -770,7 +770,7 @@ outfit_boho_1 = Outfit.create(
 outfit_boho_2 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_tiedye",
+    image: "/assets/boho_outfits/boho_tiedye.jpg",
     text: "Tie Dye Maxi Dress",
     link: "https://www.threebirdnest.com/collections/dresses/products/estella-tie-dye-plunge-maxi-dress-mocha"
   })
@@ -778,7 +778,7 @@ outfit_boho_2 = Outfit.create(
 outfit_boho_3 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_floraljumpsuit",
+    image: "/assets/boho_outfits/boho_floraljumpsuit.jpg",
     text: "Floral Jumpsuit",
     link: "https://www.threebirdnest.com/collections/dresses/products/montana-floral-print-jumpsuit-mustard"
   })
@@ -810,7 +810,7 @@ outfit_boho_6 = Outfit.create(
 outfit_boho_7 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_maxishirt.jpg",
+    image: "/assets/boho_outfits/boho_maxiskirt.jpg",
     text: "Floral Maxi Skirt",
     link: "https://www.threebirdnest.com/collections/whats-new/products/seville-maxi-skirt-floral"
   })
@@ -826,7 +826,7 @@ outfit_boho_8 = Outfit.create(
 outfit_boho_9 = Outfit.create(
   {
     style_id: styles[1].id,
-    image: "/assets/boho_outfits/boho_whiteminidress.jpg",
+    image: "/assets/boho_outfits/boho_whiteminidress.jpeg",
     text: "White Mini Dress",
     link: "https://www.threebirdnest.com/collections/dresses/products/hayden-embroidered-mini-dress-cream"
   })
