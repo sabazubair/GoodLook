@@ -231,7 +231,7 @@ question_choice_5c = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[2].id,
     text: nil,
-    image: "/assets/question_5/classicArtwork.jpeg"
+    image: "/assets/question_5/irises_classicVanG.jpg"
   })
 
 question_choice_5d = QuestionChoice.create(
@@ -247,7 +247,7 @@ question_choice_5e = QuestionChoice.create(
     question_id: questions[4].id,
     style_id: styles[4].id,
     text: nil,
-    image: "/assets/question_5/urb_artwork.jpg"
+    image: "/assets/question_5/bob_marley.jpeg"
   })
 
 # ----------- Question 6/15 -----------
