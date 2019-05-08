@@ -32,18 +32,14 @@ vertical-align: middle;
 width: 100%;
 }
 
-.icons .welcomeText p {
-  color: #F7DFD4;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
 .icons .welcomeText h1{
   color: #F7DFD4;
+  font-size: 39px;
+  line-height: 44px;
 }
 
 .icons {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .icons i{
@@ -54,13 +50,27 @@ width: 100%;
 
 .icons p{
   color: #F7DFD4;
-  font-size: 14px;
+  font-size: 19px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 5px;
+}
+
+.icons p i{
+  font-size: 27px;
+  margin-top: 0px;
+}
+
+.icons .welcomeText p {
+  color: #F7DFD4;
+  font-size: 25px;
+  margin-bottom: 27px;
+  margin-top: 20px;
 }
 
 .indexbutton {
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 .full-width-button{

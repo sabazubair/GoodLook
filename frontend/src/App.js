@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 export default class AppRouter extends Component {
   render() {
     return (
-      <div>
+      <div className="test">
         <Router>
           <NavBar />
             <Route path="/" exact component={Index} />

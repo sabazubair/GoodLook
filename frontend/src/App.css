@@ -35,13 +35,19 @@
 
 .meettheteam {
   background-color: #F7DFD4;
-  display:flex;
   align-items: center;
-  flex-direction: row;
-  padding: 20px;
+  padding: 60px;
 }
 
+.meettheteam .position-title{
+  margin-top: 15px;
+  font-size: 18px;
+}
 /* Quiz */
+.found-it{
+  margin-bottom: 80px;
+}
+
 .counter{
   font-size: 25px;
   margin: 32px;
@@ -83,7 +89,7 @@
 }
 
 .questionWrap img{
-  height: 493px;
+  height: 453px;
   width: 100%;
   display:block;
   margin:0 auto;
@@ -121,23 +127,44 @@
 
 /* After Quiz Nav */
 .after-quiz-nav{
-  text-align: center;
-  padding: 20px;
+  padding: 1px;
   color: white;
-  background-color: #559E8D;
+  background-color: #E2B091;
+}
+
+.resultText{
+  padding: 50px;
 }
 
 footer{
-  background-color: #FFF8F8;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #EABCAC;
+  padding: 16px 0 8px 0;
 }
 
 footer ul{
   list-style: none;
+  padding-left: 0px;
 }
 
-footer .card{
-  background: none;
-  border: none;
+footer ul li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-link{
+  text-align: left;
+}
+
+.footer-sig{
+  text-align: right;
+  color: black;
+}
+
+.footer-sig .fa-heart{
+  color: red;
 }
 
 /* RECOMMENDATION STYLES */

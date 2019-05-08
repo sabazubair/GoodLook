@@ -72,10 +72,10 @@ export default class TestingWardrobe extends Component {
     return (
       <div>
         <h1 className="quiz-title">Amita's Wardrobe</h1>
-        <div className="container">
-          <div className="row">
-            {warning}
-            {test}
+      <div className="found-it container">
+        <div className="row">
+          {warning}
+          {test}
           </div>
         </div>
       </div>

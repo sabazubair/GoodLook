@@ -88,9 +88,9 @@ export default class Recommendations extends Component {
     return (
       <div>
         <h1 className="quiz-title">Recommendations</h1>
-        <div className="container">
-          <div className="row">
-            {this.state.outfits.map((outfit, id) => <SingleRecommendation key={id} outfit={outfit} handleClick={this.onClick}/>)}
+      <div className="found-it container">
+        <div className="row">
+          {this.state.outfits.map((outfit, id) => <SingleRecommendation key={id} outfit={outfit} handleClick={this.onClick}/>)}
           </div>
         </div>
       </div>
