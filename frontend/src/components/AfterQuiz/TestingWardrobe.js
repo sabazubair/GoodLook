@@ -70,10 +70,13 @@ export default class TestingWardrobe extends Component {
             </div>)
     })
     return (
-      <div className="container">
-        <div className="row">
-          {warning}
-          {test}
+      <div>
+        <h1 className="quiz-title">Amita's Wardrobe</h1>
+        <div className="container">
+          <div className="row">
+            {warning}
+            {test}
+          </div>
         </div>
       </div>
     )

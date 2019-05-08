@@ -179,3 +179,19 @@ footer .card{
 .wardrobe-single button {
   width:100%;
 }
+
+/*ACCOUNT STYLES*/
+.account {
+  display: flex;
+  justify-content: center;
+}
+
+.details {
+  margin-left:5rem;
+  font-size: 1.5rem;
+}
+
+.input-details {
+  background-color: #f7dfd47a;
+  margin-left:1rem;
+}
