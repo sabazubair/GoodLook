@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import SingleRecommendation from "./SingleRecommendation"
 import axios from "axios";
-import ListGroup from 'react-bootstrap/ListGroup'
 
 export default class Recommendations extends Component {
   constructor(props) {
@@ -40,7 +39,6 @@ export default class Recommendations extends Component {
 
   onClick = (event) => {
     const saved_outfit_id = parseInt(event.target.getAttribute('id'));
-    const saved_outfit = event.target.getAttribute('outfit');
     const indexOfClickedOutfit = this.state.outfits.map( e => e.id ).indexOf( parseInt(saved_outfit_id))
 
     let body = {

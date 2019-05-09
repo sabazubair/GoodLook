@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
-import ListGroup from 'react-bootstrap/ListGroup'
 
 export default class FindMyStyle extends Component {
   render() {

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Card from 'react-bootstrap/Card'
 import ChoicesList from "./ChoicesList.js";
 
 export default class Question extends Component {

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import axios from "axios";
 import Question from './Question.js';
 import FindMyStyle from './FindMyStyle.js';
-import Card from 'react-bootstrap/Card';
 
 
 export default class Quiz extends Component {

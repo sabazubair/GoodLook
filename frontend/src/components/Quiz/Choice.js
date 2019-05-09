@@ -1,6 +1,4 @@
-
 import React, {Component} from 'react';
-import ListGroup from 'react-bootstrap/ListGroup'
 
 
 class Choice extends Component {

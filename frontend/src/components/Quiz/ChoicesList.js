@@ -1,7 +1,6 @@
 
 import React, {Component} from 'react';
 import Choice from "./Choice.js";
-import ListGroup from 'react-bootstrap/ListGroup'
 
 class ChoicesList extends Component {
   render() {
