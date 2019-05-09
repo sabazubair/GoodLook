@@ -49,7 +49,7 @@ export default class TestingWardrobe extends Component {
   render() {
     let warning;
     if (this.state.outfits.length === 0) {
-      warning = <p>Looks like your wardrobe is empty. Click on your recommendations and find some great looks!</p>
+      warning = <p style={{fontSize: "2rem"}}>Looks like your wardrobe is empty. Click on your recommendations and find some great looks!</p>
     }
 
     const test = this.state.outfits.map(outfit => {
